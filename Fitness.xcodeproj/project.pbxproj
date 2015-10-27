@@ -15,6 +15,8 @@
 		C3C5A89A1BDF64B000D2BD1C /* FitnessTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C5A8991BDF64B000D2BD1C /* FitnessTests.m */; };
 		C3C5A8A51BDF64B000D2BD1C /* FitnessUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C5A8A41BDF64B000D2BD1C /* FitnessUITests.m */; };
 		C3C5A8B41BDF64F700D2BD1C /* ClassPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C5A8B31BDF64F700D2BD1C /* ClassPerson.m */; settings = {ASSET_TAGS = (); }; };
+		C3C5A8B71BDF684A00D2BD1C /* MainMenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C5A8B61BDF684A00D2BD1C /* MainMenuTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		C3C5A8BA1BDF69B000D2BD1C /* ClassMainMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C5A8B91BDF69B000D2BD1C /* ClassMainMenu.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		C3C5A8A61BDF64B000D2BD1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C3C5A8B21BDF64F700D2BD1C /* ClassPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ClassPerson.h; path = ../../fitnes/fitnes/ClassPerson.h; sourceTree = "<group>"; };
 		C3C5A8B31BDF64F700D2BD1C /* ClassPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ClassPerson.m; path = ../../fitnes/fitnes/ClassPerson.m; sourceTree = "<group>"; };
+		C3C5A8B51BDF684A00D2BD1C /* MainMenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainMenuTableViewController.h; path = ../../fitnes/fitnes/MainMenuTableViewController.h; sourceTree = "<group>"; };
+		C3C5A8B61BDF684A00D2BD1C /* MainMenuTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainMenuTableViewController.m; path = ../../fitnes/fitnes/MainMenuTableViewController.m; sourceTree = "<group>"; };
+		C3C5A8B81BDF69B000D2BD1C /* ClassMainMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ClassMainMenu.h; path = ../../fitnes/fitnes/ClassMainMenu.h; sourceTree = "<group>"; };
+		C3C5A8B91BDF69B000D2BD1C /* ClassMainMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ClassMainMenu.m; path = ../../fitnes/fitnes/ClassMainMenu.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,10 @@
 		C3C5A87E1BDF64B000D2BD1C /* Fitness */ = {
 			isa = PBXGroup;
 			children = (
+				C3C5A8B81BDF69B000D2BD1C /* ClassMainMenu.h */,
+				C3C5A8B91BDF69B000D2BD1C /* ClassMainMenu.m */,
+				C3C5A8B51BDF684A00D2BD1C /* MainMenuTableViewController.h */,
+				C3C5A8B61BDF684A00D2BD1C /* MainMenuTableViewController.m */,
 				C3C5A8B21BDF64F700D2BD1C /* ClassPerson.h */,
 				C3C5A8B31BDF64F700D2BD1C /* ClassPerson.m */,
 				C3C5A8821BDF64B000D2BD1C /* AppDelegate.h */,
@@ -275,6 +285,8 @@
 				C3C5A8841BDF64B000D2BD1C /* AppDelegate.m in Sources */,
 				C3C5A8B41BDF64F700D2BD1C /* ClassPerson.m in Sources */,
 				C3C5A8811BDF64B000D2BD1C /* main.m in Sources */,
+				C3C5A8B71BDF684A00D2BD1C /* MainMenuTableViewController.m in Sources */,
+				C3C5A8BA1BDF69B000D2BD1C /* ClassMainMenu.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
