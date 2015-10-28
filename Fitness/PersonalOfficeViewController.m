@@ -40,25 +40,20 @@
     
     // Second view with black shadow
     
-    _secondView.layer.cornerRadius = 8;
+    _secondView.layer.cornerRadius = 6;
     _secondView.layer.shadowColor = [[UIColor blackColor] CGColor];
-    _secondView.layer.shadowRadius = 4;
+    _secondView.layer.shadowRadius = 6;
     _secondView.layer.shadowOpacity = 0.5;
     _secondView.layer.shadowOffset = CGSizeMake(0, 8);
     
     // First avatar with black layer
 
     _imageFirstAvatar.image = [UIImage imageWithData:person.avatar];
-    _imageFirstAvatar.layer.cornerRadius = 4;
+    _imageFirstAvatar.layer.cornerRadius = 6;
     _imageFirstAvatar.clipsToBounds = YES;
-    _imageFirstAvatar.layer.shadowColor = [[UIColor blackColor] CGColor];
-    _imageFirstAvatar.layer.shadowRadius = 4;
-    _imageFirstAvatar.layer.shadowOpacity = 0.5;
-    _imageFirstAvatar.layer.shadowOffset = CGSizeMake(0, 8);
-    _imageFirstAvatar.layer.masksToBounds = YES;
     CALayer *secondAvatarLayer = [CALayer layer];
     secondAvatarLayer.frame = _imageFirstAvatar.frame;
-    secondAvatarLayer.cornerRadius = 4;
+    secondAvatarLayer.cornerRadius = 2;
     secondAvatarLayer.backgroundColor = [[UIColor blackColor] CGColor];
     secondAvatarLayer.opacity = 0.5;
     [_imageFirstAvatar.layer addSublayer:secondAvatarLayer];
@@ -111,7 +106,7 @@
     
     // Buy button
     
-    _buttonBuyApp.layer.cornerRadius = 4;
+    _buttonBuyApp.layer.cornerRadius = 6;
     _buttonBuyApp.clipsToBounds = YES;
     
 }

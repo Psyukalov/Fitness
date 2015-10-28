@@ -23,12 +23,13 @@
     [super viewDidLoad];
     
     mainMenu = [[ClassMainMenu alloc] init];
-    [mainMenu setCountNewRecipes:0
-               countNewExercizes:2
+    [mainMenu setCountNewRecipes:2
+               countNewExercizes:0
                     countNewTips:1
            countNewPrescriptions:4];
     
     self.navigationItem.title = @"МЕНЮ";
+    self.navigationItem.backBarButtonItem.title = @"";
 
 }
 
