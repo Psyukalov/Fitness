@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="tnE-PK-4kQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="tnE-PK-4kQ">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <scenes>
         <!--Root View Controller-->
@@ -403,6 +403,9 @@
                                                 <exclude reference="Rse-an-nzo"/>
                                             </mask>
                                         </variation>
+                                        <connections>
+                                            <action selector="buttonChangeAvatar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hQd-dR-ft2"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NGk-Rn-6Xx">
                                         <rect key="frame" x="107" y="414" width="160" height="30"/>
@@ -423,6 +426,9 @@
                                                 <exclude reference="i7A-pC-0A7"/>
                                             </mask>
                                         </variation>
+                                        <connections>
+                                            <action selector="buttonClearDefaults:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q8Z-UE-XPD"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <animations/>
@@ -473,8 +479,8 @@
                     </view>
                     <connections>
                         <outlet property="buttonBuyApp" destination="FBm-To-K1a" id="maT-HG-csE"/>
-                        <outlet property="buttonChangeAvatar" destination="Pib-sc-1ak" id="T5E-mC-yBT"/>
-                        <outlet property="buttonClearData" destination="NGk-Rn-6Xx" id="nVv-Yp-yTY"/>
+                        <outlet property="buttonChangeAvatar" destination="Pib-sc-1ak" id="8Z9-st-xIh"/>
+                        <outlet property="buttonClearDefaults" destination="NGk-Rn-6Xx" id="0L8-eV-iln"/>
                         <outlet property="imageFirstAvatar" destination="Toa-Rw-kv0" id="RUp-eD-g8k"/>
                         <outlet property="imageSecondAvatar" destination="Rmf-4R-RFe" id="5k8-rV-W0b"/>
                         <outlet property="labelBirthday" destination="cNj-do-HBT" id="10W-b0-LqJ"/>

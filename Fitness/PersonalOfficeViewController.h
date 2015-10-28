@@ -24,6 +24,9 @@
 @property (weak, nonatomic) IBOutlet UILabel *labelGender;
 @property (weak, nonatomic) IBOutlet UIButton *buttonBuyApp;
 @property (weak, nonatomic) IBOutlet UIButton *buttonChangeAvatar;
-@property (weak, nonatomic) IBOutlet UIButton *buttonClearData;
+@property (weak, nonatomic) IBOutlet UIButton *buttonClearDefaults;
+
+- (IBAction)buttonChangeAvatar:(id)sender;
+- (IBAction)buttonClearDefaults:(id)sender;
 
 @end

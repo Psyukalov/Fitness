@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		204EF2391BE1127B00F77F88 /* ClassPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 204EF2381BE1127B00F77F88 /* ClassPerson.m */; };
+		204EF23E1BE1129000F77F88 /* ClassMainMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 204EF23B1BE1129000F77F88 /* ClassMainMenu.m */; };
+		204EF23F1BE1129000F77F88 /* MainMenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 204EF23D1BE1129000F77F88 /* MainMenuTableViewController.m */; };
 		C3C5A8811BDF64B000D2BD1C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C5A8801BDF64B000D2BD1C /* main.m */; };
 		C3C5A8841BDF64B000D2BD1C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C5A8831BDF64B000D2BD1C /* AppDelegate.m */; };
 		C3C5A88A1BDF64B000D2BD1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3C5A8881BDF64B000D2BD1C /* Main.storyboard */; };
@@ -14,11 +17,7 @@
 		C3C5A88F1BDF64B000D2BD1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3C5A88D1BDF64B000D2BD1C /* LaunchScreen.storyboard */; };
 		C3C5A89A1BDF64B000D2BD1C /* FitnessTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C5A8991BDF64B000D2BD1C /* FitnessTests.m */; };
 		C3C5A8A51BDF64B000D2BD1C /* FitnessUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C5A8A41BDF64B000D2BD1C /* FitnessUITests.m */; };
-		C3C5A8B41BDF64F700D2BD1C /* ClassPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C5A8B31BDF64F700D2BD1C /* ClassPerson.m */; settings = {ASSET_TAGS = (); }; };
-		C3C5A8B71BDF684A00D2BD1C /* MainMenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C5A8B61BDF684A00D2BD1C /* MainMenuTableViewController.m */; settings = {ASSET_TAGS = (); }; };
-		C3C5A8BA1BDF69B000D2BD1C /* ClassMainMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C5A8B91BDF69B000D2BD1C /* ClassMainMenu.m */; settings = {ASSET_TAGS = (); }; };
-		C3C5A8BD1BDF785600D2BD1C /* PersonalOfficeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C5A8BC1BDF785600D2BD1C /* PersonalOfficeViewController.m */; settings = {ASSET_TAGS = (); }; };
-		C3C5A8C11BDFA00C00D2BD1C /* images.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C3C5A8C01BDFA00C00D2BD1C /* images.jpeg */; settings = {ASSET_TAGS = (); }; };
+		C3C5A8BD1BDF785600D2BD1C /* PersonalOfficeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C5A8BC1BDF785600D2BD1C /* PersonalOfficeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +38,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		204EF2371BE1127B00F77F88 /* ClassPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassPerson.h; sourceTree = "<group>"; };
+		204EF2381BE1127B00F77F88 /* ClassPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassPerson.m; sourceTree = "<group>"; };
+		204EF23A1BE1129000F77F88 /* ClassMainMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassMainMenu.h; sourceTree = "<group>"; };
+		204EF23B1BE1129000F77F88 /* ClassMainMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassMainMenu.m; sourceTree = "<group>"; };
+		204EF23C1BE1129000F77F88 /* MainMenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuTableViewController.h; sourceTree = "<group>"; };
+		204EF23D1BE1129000F77F88 /* MainMenuTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuTableViewController.m; sourceTree = "<group>"; };
 		C3C5A87C1BDF64B000D2BD1C /* Fitness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fitness.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3C5A8801BDF64B000D2BD1C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C3C5A8821BDF64B000D2BD1C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -53,15 +58,8 @@
 		C3C5A8A01BDF64B000D2BD1C /* FitnessUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FitnessUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3C5A8A41BDF64B000D2BD1C /* FitnessUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FitnessUITests.m; sourceTree = "<group>"; };
 		C3C5A8A61BDF64B000D2BD1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C3C5A8B21BDF64F700D2BD1C /* ClassPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ClassPerson.h; path = ../../fitnes/fitnes/ClassPerson.h; sourceTree = "<group>"; };
-		C3C5A8B31BDF64F700D2BD1C /* ClassPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ClassPerson.m; path = ../../fitnes/fitnes/ClassPerson.m; sourceTree = "<group>"; };
-		C3C5A8B51BDF684A00D2BD1C /* MainMenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainMenuTableViewController.h; path = ../../fitnes/fitnes/MainMenuTableViewController.h; sourceTree = "<group>"; };
-		C3C5A8B61BDF684A00D2BD1C /* MainMenuTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainMenuTableViewController.m; path = ../../fitnes/fitnes/MainMenuTableViewController.m; sourceTree = "<group>"; };
-		C3C5A8B81BDF69B000D2BD1C /* ClassMainMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ClassMainMenu.h; path = ../../fitnes/fitnes/ClassMainMenu.h; sourceTree = "<group>"; };
-		C3C5A8B91BDF69B000D2BD1C /* ClassMainMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ClassMainMenu.m; path = ../../fitnes/fitnes/ClassMainMenu.m; sourceTree = "<group>"; };
 		C3C5A8BB1BDF785600D2BD1C /* PersonalOfficeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalOfficeViewController.h; sourceTree = "<group>"; };
 		C3C5A8BC1BDF785600D2BD1C /* PersonalOfficeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalOfficeViewController.m; sourceTree = "<group>"; };
-		C3C5A8C01BDFA00C00D2BD1C /* images.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = images.jpeg; path = ../../../../Desktop/images.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,14 +110,13 @@
 		C3C5A87E1BDF64B000D2BD1C /* Fitness */ = {
 			isa = PBXGroup;
 			children = (
-				C3C5A8C01BDFA00C00D2BD1C /* images.jpeg */,
 				C3C5A8BF1BDF788000D2BD1C /* PersonalOffice */,
 				C3C5A8BE1BDF786400D2BD1C /* MainMenu */,
 				C3C5A8821BDF64B000D2BD1C /* AppDelegate.h */,
 				C3C5A8831BDF64B000D2BD1C /* AppDelegate.m */,
 				C3C5A8881BDF64B000D2BD1C /* Main.storyboard */,
-				C3C5A88B1BDF64B000D2BD1C /* Assets.xcassets */,
 				C3C5A88D1BDF64B000D2BD1C /* LaunchScreen.storyboard */,
+				C3C5A88B1BDF64B000D2BD1C /* Assets.xcassets */,
 				C3C5A8901BDF64B000D2BD1C /* Info.plist */,
 				C3C5A87F1BDF64B000D2BD1C /* Supporting Files */,
 			);
@@ -155,10 +152,10 @@
 		C3C5A8BE1BDF786400D2BD1C /* MainMenu */ = {
 			isa = PBXGroup;
 			children = (
-				C3C5A8B51BDF684A00D2BD1C /* MainMenuTableViewController.h */,
-				C3C5A8B61BDF684A00D2BD1C /* MainMenuTableViewController.m */,
-				C3C5A8B81BDF69B000D2BD1C /* ClassMainMenu.h */,
-				C3C5A8B91BDF69B000D2BD1C /* ClassMainMenu.m */,
+				204EF23C1BE1129000F77F88 /* MainMenuTableViewController.h */,
+				204EF23D1BE1129000F77F88 /* MainMenuTableViewController.m */,
+				204EF23A1BE1129000F77F88 /* ClassMainMenu.h */,
+				204EF23B1BE1129000F77F88 /* ClassMainMenu.m */,
 			);
 			name = MainMenu;
 			sourceTree = "<group>";
@@ -168,8 +165,8 @@
 			children = (
 				C3C5A8BB1BDF785600D2BD1C /* PersonalOfficeViewController.h */,
 				C3C5A8BC1BDF785600D2BD1C /* PersonalOfficeViewController.m */,
-				C3C5A8B21BDF64F700D2BD1C /* ClassPerson.h */,
-				C3C5A8B31BDF64F700D2BD1C /* ClassPerson.m */,
+				204EF2371BE1127B00F77F88 /* ClassPerson.h */,
+				204EF2381BE1127B00F77F88 /* ClassPerson.m */,
 			);
 			name = PersonalOffice;
 			sourceTree = "<group>";
@@ -280,7 +277,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3C5A88F1BDF64B000D2BD1C /* LaunchScreen.storyboard in Resources */,
-				C3C5A8C11BDFA00C00D2BD1C /* images.jpeg in Resources */,
 				C3C5A88C1BDF64B000D2BD1C /* Assets.xcassets in Resources */,
 				C3C5A88A1BDF64B000D2BD1C /* Main.storyboard in Resources */,
 			);
@@ -308,11 +304,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3C5A8841BDF64B000D2BD1C /* AppDelegate.m in Sources */,
-				C3C5A8B41BDF64F700D2BD1C /* ClassPerson.m in Sources */,
+				204EF23E1BE1129000F77F88 /* ClassMainMenu.m in Sources */,
+				204EF2391BE1127B00F77F88 /* ClassPerson.m in Sources */,
 				C3C5A8BD1BDF785600D2BD1C /* PersonalOfficeViewController.m in Sources */,
 				C3C5A8811BDF64B000D2BD1C /* main.m in Sources */,
-				C3C5A8B71BDF684A00D2BD1C /* MainMenuTableViewController.m in Sources */,
-				C3C5A8BA1BDF69B000D2BD1C /* ClassMainMenu.m in Sources */,
+				204EF23F1BE1129000F77F88 /* MainMenuTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -538,6 +534,7 @@
 				C3C5A8AB1BDF64B000D2BD1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C3C5A8AC1BDF64B000D2BD1C /* Build configuration list for PBXNativeTarget "FitnessTests" */ = {
 			isa = XCConfigurationList;
@@ -546,6 +543,7 @@
 				C3C5A8AE1BDF64B000D2BD1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C3C5A8AF1BDF64B000D2BD1C /* Build configuration list for PBXNativeTarget "FitnessUITests" */ = {
 			isa = XCConfigurationList;
@@ -554,6 +552,7 @@
 				C3C5A8B11BDF64B000D2BD1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
