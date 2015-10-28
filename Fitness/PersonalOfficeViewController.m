@@ -30,9 +30,6 @@
     person = [[ClassPerson alloc] init];
     person.name = @"GTA 5";
     [person setStartDate];
-    _imageFirstAvatar.image = [UIImage imageNamed:@"images.jpeg"];
-    _imageSecondAvatar.image = [UIImage imageNamed:@"images.jpeg"];
-    person.avatar = UIImagePNGRepresentation(_imageFirstAvatar.image);
     person.weight = 68.8;
     person.growth = 1.78;
     person.birthday = person.startDate;
@@ -43,7 +40,7 @@
     
     // Second view with black shadow
     
-    _secondView.layer.cornerRadius = 4;
+    _secondView.layer.cornerRadius = 8;
     _secondView.layer.shadowColor = [[UIColor blackColor] CGColor];
     _secondView.layer.shadowRadius = 4;
     _secondView.layer.shadowOpacity = 0.5;
@@ -51,21 +48,24 @@
     
     // First avatar with black layer
 
+    _imageFirstAvatar.image = [UIImage imageWithData:person.avatar];
     _imageFirstAvatar.layer.cornerRadius = 4;
     _imageFirstAvatar.clipsToBounds = YES;
+    _imageFirstAvatar.layer.shadowColor = [[UIColor blackColor] CGColor];
+    _imageFirstAvatar.layer.shadowRadius = 4;
+    _imageFirstAvatar.layer.shadowOpacity = 0.5;
+    _imageFirstAvatar.layer.shadowOffset = CGSizeMake(0, 8);
+    _imageFirstAvatar.layer.masksToBounds = YES;
     CALayer *secondAvatarLayer = [CALayer layer];
     secondAvatarLayer.frame = _imageFirstAvatar.frame;
+    secondAvatarLayer.cornerRadius = 4;
     secondAvatarLayer.backgroundColor = [[UIColor blackColor] CGColor];
     secondAvatarLayer.opacity = 0.5;
-    secondAvatarLayer.masksToBounds = NO;
-    secondAvatarLayer.shadowColor = [[UIColor blackColor] CGColor];
-    secondAvatarLayer.shadowRadius = 4;
-    secondAvatarLayer.shadowOpacity = 0.5;
-    secondAvatarLayer.shadowOffset = CGSizeMake(0, 8);
     [_imageFirstAvatar.layer addSublayer:secondAvatarLayer];
     
     // Second avatar
     
+    _imageSecondAvatar.image = [UIImage imageWithData:person.avatar];
     _imageSecondAvatar.layer.cornerRadius = 46;
     _imageSecondAvatar.clipsToBounds = YES;
     
@@ -101,7 +101,7 @@
     
     UIBezierPath *path = [UIBezierPath bezierPath];
     [path moveToPoint:CGPointMake(0, 472)];
-    [path addLineToPoint:CGPointMake(_secondView.frame.size.width, 472)];
+    [path addLineToPoint:CGPointMake(self.view.frame.size.width - 40, 472)];
     CAShapeLayer *shapeLineLayer = [CAShapeLayer layer];
     shapeLineLayer.path = [path CGPath];
     shapeLineLayer.strokeColor = [[UIColor blackColor] CGColor];
@@ -118,7 +118,25 @@
 
 - (IBAction)buttonChangeAvatar:(id)sender {
 
+    if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypePhotoLibrary]) {
+        
+        UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+        picker.delegate = self;
+        [picker setSourceType:UIImagePickerControllerSourceTypePhotoLibrary];
+        picker.allowsEditing = YES;
+        [self presentViewController:picker animated:true completion:nil];
+        
+    }
+
+}
+
+-(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
     
+    UIImage *image = [info objectForKey:UIImagePickerControllerEditedImage];
+    _imageFirstAvatar.image = image;
+    _imageSecondAvatar.image = image;
+    person.avatar = UIImagePNGRepresentation(_imageFirstAvatar.image);
+    [self dismissViewControllerAnimated:true completion:nil];
 
 }
 

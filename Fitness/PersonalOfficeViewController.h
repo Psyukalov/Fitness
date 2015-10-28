@@ -11,7 +11,7 @@
 #import "ClassPerson.h"
 
 
-@interface PersonalOfficeViewController : UIViewController <UIImagePickerControllerDelegate>
+@interface PersonalOfficeViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UIView *secondView;
 @property (weak, nonatomic) IBOutlet UIImageView *imageFirstAvatar;
