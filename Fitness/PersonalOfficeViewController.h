@@ -9,6 +9,7 @@
 
 #import <UIKit/UIKit.h>
 #import "ClassPerson.h"
+#import "EditPersonalDefaultsViewController.h"
 
 
 @interface PersonalOfficeViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>

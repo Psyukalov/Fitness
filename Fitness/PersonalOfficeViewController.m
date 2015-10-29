@@ -12,7 +12,7 @@
 
 @interface PersonalOfficeViewController () {
     
-    @private
+    @public
     ClassPerson *person;
     NSDateFormatter *formatter;
     
@@ -25,17 +25,8 @@
 - (void)viewDidLoad {
 
     [super viewDidLoad];
-    
-    //
+
     person = [[ClassPerson alloc] init];
-    person.name = @"GTA 5";
-    [person setStartDate];
-    person.weight = 68.8;
-    person.growth = 1.78;
-    person.birthday = person.startDate;
-    person.gender = @"Женский";
-    //
-    
     self.navigationItem.title = @"НАСТРОЙКИ";
     
     // Second view with black shadow
@@ -78,7 +69,7 @@
     // Bio
     
     _labelWeight.text = [NSString stringWithFormat:@"%1.1f кг", person.weight];
-    _labelGrowth.text = [NSString stringWithFormat:@"%1.1f м", person.growth];
+    _labelGrowth.text = [NSString stringWithFormat:@"%1.2f м", person.growth];
     _labelBirthday.text = [formatter stringFromDate:person.birthday];
     _labelGender.text = person.gender;
     

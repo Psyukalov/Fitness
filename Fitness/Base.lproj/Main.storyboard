@@ -397,6 +397,7 @@
                                             <constraint firstAttribute="height" constant="30" id="Rse-an-nzo"/>
                                             <constraint firstAttribute="width" constant="160" id="uxP-sW-LJN"/>
                                         </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <state key="normal" title="Изменить аватар">
                                             <color key="titleColor" red="0.0039215686269999999" green="0.88235294119999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
@@ -420,6 +421,7 @@
                                             <constraint firstAttribute="width" constant="160" id="i7A-pC-0A7"/>
                                             <constraint firstAttribute="height" constant="30" id="sef-DC-zGp"/>
                                         </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <state key="normal" title="Сбросить данные">
                                             <color key="titleColor" red="0.0039215686269999999" green="0.88235294119999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
@@ -431,6 +433,7 @@
                                         </variation>
                                         <connections>
                                             <action selector="buttonClearDefaults:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q8Z-UE-XPD"/>
+                                            <segue destination="R7x-xJ-fLw" kind="presentation" id="a42-8z-RMZ"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -498,6 +501,119 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="535" y="527"/>
+        </scene>
+        <!--Edit Personal Defaults View Controller-->
+        <scene sceneID="7pE-FA-MUg">
+            <objects>
+                <viewController id="R7x-xJ-fLw" customClass="EditPersonalDefaultsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lF4-yX-G5s"/>
+                        <viewControllerLayoutGuide type="bottom" id="GO3-Yk-nnC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zzK-An-38L">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WGj-6H-cpL">
+                                <rect key="frame" x="20" y="40" width="374" height="676"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d36-vr-iRv">
+                                        <rect key="frame" x="107" y="606" width="160" height="30"/>
+                                        <color key="backgroundColor" red="0.17254901959999999" green="0.24313725489999999" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <state key="normal" title="Подтвердить">
+                                            <color key="titleColor" red="0.0039215686269999999" green="0.88235294119999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonAgreeDefaults:" destination="R7x-xJ-fLw" eventType="touchUpInside" id="goS-k3-aUl"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Имя" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Afm-2n-uU9">
+                                        <rect key="frame" x="123" y="20" width="128" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" red="0.17254901959999999" green="0.24313725489999999" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="2Fb-zV-7q2">
+                                        <rect key="frame" x="59" y="61" width="256" height="30"/>
+                                        <color key="backgroundColor" red="0.17254901959999999" green="0.24313725489999999" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="0.0039215686269999999" green="0.88235294119999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Дата рождения" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q7H-ZL-gly">
+                                        <rect key="frame" x="59" y="201" width="256" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" red="0.17254901959999999" green="0.24313725489999999" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Пол" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JvZ-dt-oZn">
+                                        <rect key="frame" x="123" y="468" width="128" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" red="0.17254901959999999" green="0.24313725489999999" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ggF-sR-7TO">
+                                        <rect key="frame" x="0.0" y="494" width="374" height="82"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="R7x-xJ-fLw" id="7NX-8r-j5D"/>
+                                            <outlet property="delegate" destination="R7x-xJ-fLw" id="Lgu-ll-Qmu"/>
+                                        </connections>
+                                    </pickerView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PSh-it-7AJ">
+                                        <rect key="frame" x="59" y="111" width="128" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" red="0.17254901959999999" green="0.24313725489999999" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WRZ-b0-p8t">
+                                        <rect key="frame" x="187" y="111" width="128" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" red="0.17254901959999999" green="0.24313725489999999" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="QeA-DA-WEo" userLabel="1">
+                                        <rect key="frame" x="204" y="152" width="94" height="29"/>
+                                        <color key="tintColor" red="0.17254901959999999" green="0.24313725489999999" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="stepperChangeGrowth:" destination="R7x-xJ-fLw" eventType="valueChanged" id="OO2-z4-man"/>
+                                        </connections>
+                                    </stepper>
+                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="eJQ-ry-XSn" userLabel="2">
+                                        <rect key="frame" x="76" y="152" width="94" height="29"/>
+                                        <color key="tintColor" red="0.17254901959999999" green="0.24313725489999999" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="stepperChangeWeight:" destination="R7x-xJ-fLw" eventType="valueChanged" id="sqB-s0-CWC"/>
+                                        </connections>
+                                    </stepper>
+                                    <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="YlN-f3-1vX">
+                                        <rect key="frame" x="0.0" y="232" width="374" height="216"/>
+                                        <date key="date" timeIntervalSinceReferenceDate="467818487.91494602">
+                                            <!--2015-10-29 13:34:47 +0000-->
+                                        </date>
+                                    </datePicker>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.17254901959999999" green="0.24313725489999999" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="buttonAgreeDefaults" destination="d36-vr-iRv" id="hSP-Ts-kCW"/>
+                        <outlet property="dataPickerBirthday" destination="YlN-f3-1vX" id="F2u-bB-ZYe"/>
+                        <outlet property="editName" destination="2Fb-zV-7q2" id="D81-nD-WBb"/>
+                        <outlet property="labelGrowth" destination="WRZ-b0-p8t" id="b4d-sn-yLu"/>
+                        <outlet property="labelWeight" destination="PSh-it-7AJ" id="dd8-WX-BqK"/>
+                        <outlet property="pickerGender" destination="ggF-sR-7TO" id="KZe-m7-QmV"/>
+                        <outlet property="secondView" destination="WGj-6H-cpL" id="9Qe-fL-m1I"/>
+                        <outlet property="stepperChangeGrowth" destination="QeA-DA-WEo" id="CfX-Le-SMu"/>
+                        <outlet property="stepperChangeWeight" destination="eJQ-ry-XSn" id="fvS-PO-bdF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4cd-UK-iBY" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="535" y="1372"/>
         </scene>
     </scenes>
 </document>

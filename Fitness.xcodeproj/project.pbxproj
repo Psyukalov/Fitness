@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		203896F31BE2142300160F66 /* EditPersonalDefaultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 203896F21BE2142300160F66 /* EditPersonalDefaultsViewController.m */; };
 		204EF2391BE1127B00F77F88 /* ClassPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 204EF2381BE1127B00F77F88 /* ClassPerson.m */; };
 		204EF23E1BE1129000F77F88 /* ClassMainMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 204EF23B1BE1129000F77F88 /* ClassMainMenu.m */; };
 		204EF23F1BE1129000F77F88 /* MainMenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 204EF23D1BE1129000F77F88 /* MainMenuTableViewController.m */; };
@@ -38,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		203896F11BE2142300160F66 /* EditPersonalDefaultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditPersonalDefaultsViewController.h; sourceTree = "<group>"; };
+		203896F21BE2142300160F66 /* EditPersonalDefaultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditPersonalDefaultsViewController.m; sourceTree = "<group>"; };
 		204EF2371BE1127B00F77F88 /* ClassPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassPerson.h; sourceTree = "<group>"; };
 		204EF2381BE1127B00F77F88 /* ClassPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassPerson.m; sourceTree = "<group>"; };
 		204EF23A1BE1129000F77F88 /* ClassMainMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassMainMenu.h; sourceTree = "<group>"; };
@@ -87,6 +90,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		203896F01BE213E900160F66 /* EditPersonalDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				203896F11BE2142300160F66 /* EditPersonalDefaultsViewController.h */,
+				203896F21BE2142300160F66 /* EditPersonalDefaultsViewController.m */,
+			);
+			name = EditPersonalDefaults;
+			sourceTree = "<group>";
+		};
 		C3C5A8731BDF64B000D2BD1C = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +122,7 @@
 		C3C5A87E1BDF64B000D2BD1C /* Fitness */ = {
 			isa = PBXGroup;
 			children = (
+				203896F01BE213E900160F66 /* EditPersonalDefaults */,
 				C3C5A8BF1BDF788000D2BD1C /* PersonalOffice */,
 				C3C5A8BE1BDF786400D2BD1C /* MainMenu */,
 				C3C5A8821BDF64B000D2BD1C /* AppDelegate.h */,
@@ -304,6 +317,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3C5A8841BDF64B000D2BD1C /* AppDelegate.m in Sources */,
+				203896F31BE2142300160F66 /* EditPersonalDefaultsViewController.m in Sources */,
 				204EF23E1BE1129000F77F88 /* ClassMainMenu.m in Sources */,
 				204EF2391BE1127B00F77F88 /* ClassPerson.m in Sources */,
 				C3C5A8BD1BDF785600D2BD1C /* PersonalOfficeViewController.m in Sources */,

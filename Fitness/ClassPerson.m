@@ -74,12 +74,12 @@
 
 - (void)setBirthday:(NSDate *)birthday {
     
-    if (birthday < [NSDate date]) {
+    //if (birthday < [NSDate date]) {
         
         _birthday = birthday;
         [defaults setObject:_birthday forKey:@"birthday"];
         
-    }
+    //}
     
 }
 
