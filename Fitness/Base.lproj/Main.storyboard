@@ -383,6 +383,9 @@
                                         <state key="normal" title="ПОЛНАЯ ВЕРСИЯ">
                                             <color key="titleColor" red="0.0039215686269999999" green="0.88235294119999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="buttonBuyApp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MT3-Po-NyO"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pib-sc-1ak">
                                         <rect key="frame" x="107" y="364" width="160" height="30"/>

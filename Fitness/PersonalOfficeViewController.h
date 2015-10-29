@@ -28,5 +28,6 @@
 
 - (IBAction)buttonChangeAvatar:(id)sender;
 - (IBAction)buttonClearDefaults:(id)sender;
+- (IBAction)buttonBuyApp:(id)sender;
 
 @end

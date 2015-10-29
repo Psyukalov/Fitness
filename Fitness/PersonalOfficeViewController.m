@@ -141,4 +141,10 @@
 
 }
 
+- (IBAction)buttonBuyApp:(id)sender {
+
+    //
+
+}
+
 @end
