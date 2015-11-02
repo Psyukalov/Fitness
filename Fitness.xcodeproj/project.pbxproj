@@ -20,8 +20,8 @@
 		C3C5A8A51BDF64B000D2BD1C /* FitnessUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C5A8A41BDF64B000D2BD1C /* FitnessUITests.m */; };
 		C3C5A8BD1BDF785600D2BD1C /* PersonalOfficeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C5A8BC1BDF785600D2BD1C /* PersonalOfficeViewController.m */; };
 		C3D164831BE79D900064ABA2 /* PersonalHistogramViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D164821BE79D900064ABA2 /* PersonalHistogramViewController.m */; settings = {ASSET_TAGS = (); }; };
-		C3D164861BE7A32E0064ABA2 /* ClassHistogram.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D164851BE7A32E0064ABA2 /* ClassHistogram.m */; settings = {ASSET_TAGS = (); }; };
 		C3D164881BE7AD380064ABA2 /* buttonGear@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3D164871BE7AD380064ABA2 /* buttonGear@2x.png */; settings = {ASSET_TAGS = (); }; };
+		C3D1648B1BE7AEE90064ABA2 /* ClassHistogram.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D164891BE7AEE90064ABA2 /* ClassHistogram.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,9 +68,9 @@
 		C3C5A8BC1BDF785600D2BD1C /* PersonalOfficeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalOfficeViewController.m; sourceTree = "<group>"; };
 		C3D164811BE79D900064ABA2 /* PersonalHistogramViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalHistogramViewController.h; sourceTree = "<group>"; };
 		C3D164821BE79D900064ABA2 /* PersonalHistogramViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalHistogramViewController.m; sourceTree = "<group>"; };
-		C3D164841BE7A32E0064ABA2 /* ClassHistogram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ClassHistogram.h; path = "../../../Desktop/Arkhiv/DSBarChart-master/DSBarChart/ClassHistogram.h"; sourceTree = "<group>"; };
-		C3D164851BE7A32E0064ABA2 /* ClassHistogram.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ClassHistogram.m; path = "../../../Desktop/Arkhiv/DSBarChart-master/DSBarChart/ClassHistogram.m"; sourceTree = "<group>"; };
 		C3D164871BE7AD380064ABA2 /* buttonGear@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "buttonGear@2x.png"; path = "../../../Desktop/buttonGear@2x.png"; sourceTree = "<group>"; };
+		C3D164891BE7AEE90064ABA2 /* ClassHistogram.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassHistogram.m; sourceTree = "<group>"; };
+		C3D1648A1BE7AEE90064ABA2 /* ClassHistogram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassHistogram.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,8 +199,8 @@
 			children = (
 				C3D164811BE79D900064ABA2 /* PersonalHistogramViewController.h */,
 				C3D164821BE79D900064ABA2 /* PersonalHistogramViewController.m */,
-				C3D164841BE7A32E0064ABA2 /* ClassHistogram.h */,
-				C3D164851BE7A32E0064ABA2 /* ClassHistogram.m */,
+				C3D164891BE7AEE90064ABA2 /* ClassHistogram.m */,
+				C3D1648A1BE7AEE90064ABA2 /* ClassHistogram.h */,
 			);
 			name = PersonalHistogram;
 			sourceTree = "<group>";
@@ -339,7 +339,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3C5A8841BDF64B000D2BD1C /* AppDelegate.m in Sources */,
-				C3D164861BE7A32E0064ABA2 /* ClassHistogram.m in Sources */,
+				C3D1648B1BE7AEE90064ABA2 /* ClassHistogram.m in Sources */,
 				203896F31BE2142300160F66 /* EditPersonalDefaultsViewController.m in Sources */,
 				204EF23E1BE1129000F77F88 /* ClassMainMenu.m in Sources */,
 				204EF2391BE1127B00F77F88 /* ClassPerson.m in Sources */,
