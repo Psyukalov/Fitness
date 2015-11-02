@@ -85,15 +85,15 @@
     
     // Line
     
-    UIBezierPath *path = [UIBezierPath bezierPath];
-    [path moveToPoint:CGPointMake(0, 472)];
-    [path addLineToPoint:CGPointMake(self.view.frame.size.width - 40, 472)];
-    CAShapeLayer *shapeLineLayer = [CAShapeLayer layer];
-    shapeLineLayer.path = [path CGPath];
-    shapeLineLayer.strokeColor = [[UIColor blackColor] CGColor];
-    shapeLineLayer.lineWidth = 0.4;
-    shapeLineLayer.fillColor = [[UIColor blackColor] CGColor];
-    [_secondView.layer addSublayer:shapeLineLayer];
+    //UIBezierPath *path = [UIBezierPath bezierPath];
+    //[path moveToPoint:CGPointMake(0, 500)];
+    //[path addLineToPoint:CGPointMake(self.view.frame.size.width - 40, 500)];
+    //CAShapeLayer *shapeLineLayer = [CAShapeLayer layer];
+    //shapeLineLayer.path = [path CGPath];
+    //shapeLineLayer.strokeColor = [[UIColor blackColor] CGColor];
+    //shapeLineLayer.lineWidth = 0.4;
+    //shapeLineLayer.fillColor = [[UIColor blackColor] CGColor];
+    //[_secondView.layer addSublayer:shapeLineLayer];
     
     // Buy button
     
