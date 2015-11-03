@@ -128,7 +128,7 @@
 
 - (IBAction)buttonClearDefaults:(id)sender {
 
-    [person clearDefaults];
+    //[person clearDefaults];
 
 }
 
@@ -136,6 +136,16 @@
 
     //
 
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    if ([segue.identifier isEqualToString:@"segueToEditPersonalDefaults"]) {
+        
+        [segue.destinationViewController setPerson:person];
+        
+    }
+    
 }
 
 @end

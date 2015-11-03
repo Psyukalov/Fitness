@@ -6,14 +6,10 @@
 //  Copyright © 2015 Admin. All rights reserved.
 //
 
-
 #import "EditPersonalDefaultsViewController.h"
-
 
 @interface EditPersonalDefaultsViewController () {
     
-    double growth;
-    double weight;
     NSArray *listGender;
     
 }
@@ -22,6 +18,20 @@
 
 
 @implementation EditPersonalDefaultsViewController
+
+@synthesize person = _person;
+
+- (void)setPerson:(ClassPerson *)person {
+    
+    _person = person;
+    
+}
+
+- (ClassPerson *)person {
+    
+    return _person;
+    
+}
 
 - (void)viewDidLoad {
     
@@ -37,25 +47,25 @@
     
     _buttonAgreeDefaults.layer.cornerRadius = 15;
     
-    _editName.text = @"Введите имя";
+    _editName.text = self.person.name;
+    
     _editName.layer.cornerRadius = 10;
     _editName.layer.masksToBounds = YES;
     
-    weight = 80;
-    _labelWeight.text = [NSString stringWithFormat:@"Вес %1.1f кг", weight];
+    _labelWeight.text = [NSString stringWithFormat:@"Вес %1.1f кг", self.person.weight];
+
+    _labelGrowth.text = [NSString stringWithFormat:@"Рост %1.2f м", self.person.growth];
     
-    growth = 1.5;
-    _labelGrowth.text = [NSString stringWithFormat:@"Рост %1.2f м", growth];
-    
-    _stepperChangeWeight.value = weight;
+    _stepperChangeWeight.value = self.person.weight;
     _stepperChangeWeight.minimumValue = 10;
     _stepperChangeWeight.stepValue = 0.1;
     
-    _stepperChangeGrowth.value = growth;
+    _stepperChangeGrowth.value = self.person.growth;
     _stepperChangeGrowth.minimumValue = 1;
     _stepperChangeGrowth.stepValue = 0.01;
     
     _dataPickerBirthday.maximumDate = [NSDate date];
+    _dataPickerBirthday.date = self.person.birthday;
     
 }
 
@@ -79,27 +89,24 @@
 
 - (IBAction)stepperChangeWeight:(id)sender {
     
-    weight = _stepperChangeWeight.value;
-    _labelWeight.text = [NSString stringWithFormat:@"Вес %1.1f кг", weight];\
+    self.person.weight = _stepperChangeWeight.value;
+    _labelWeight.text = [NSString stringWithFormat:@"Вес %1.1f кг", self.person.weight];
 
 }
 
 - (IBAction)stepperChangeGrowth:(id)sender {
 
-    growth = _stepperChangeGrowth.value;
-    _labelGrowth.text = [NSString stringWithFormat:@"Рост %1.2f м", growth];
+    self.person.growth = _stepperChangeGrowth.value;
+    _labelGrowth.text = [NSString stringWithFormat:@"Рост %1.2f м", self.person.growth];
     
 }
 
 - (IBAction)buttonAgreeDefaults:(id)sender {
-    
-    ClassPerson *person = [[ClassPerson alloc] init];
-    person.name = _editName.text;
-    [person setStartDate];
-    person.weight = weight;
-    person.growth = growth;
-    person.birthday = _dataPickerBirthday.date;
-    person.gender = listGender[[_pickerGender selectedRowInComponent:0]];
+
+    self.person.name = _editName.text;
+    [self.person setStartDate];
+    self.person.birthday = _dataPickerBirthday.date;
+    self.person.gender = listGender[[_pickerGender selectedRowInComponent:0]];
     
     [self dismissViewControllerAnimated:YES completion:nil];
     

@@ -427,7 +427,7 @@
                                             <constraint firstAttribute="height" constant="30" id="tlq-fb-yuq"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <state key="normal" title="Сбросить данные">
+                                        <state key="normal" title="Редактировать">
                                             <color key="titleColor" red="0.0039215686269999999" green="0.88235294119999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <variation key="default">
@@ -438,7 +438,7 @@
                                         </variation>
                                         <connections>
                                             <action selector="buttonClearDefaults:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q8Z-UE-XPD"/>
-                                            <segue destination="R7x-xJ-fLw" kind="presentation" id="a42-8z-RMZ"/>
+                                            <segue destination="R7x-xJ-fLw" kind="presentation" identifier="segueToEditPersonalDefaults" id="a42-8z-RMZ"/>
                                         </connections>
                                     </button>
                                 </subviews>

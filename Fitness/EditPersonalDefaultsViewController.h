@@ -10,9 +10,10 @@
 #import <UIKit/UIKit.h>
 #import "ClassPerson.h"
 
+
 @interface EditPersonalDefaultsViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate>
 
-
+@property (nonatomic, readwrite) ClassPerson *person;
 @property (weak, nonatomic) IBOutlet UIView *secondView;
 @property (weak, nonatomic) IBOutlet UITextField *editName;
 @property (weak, nonatomic) IBOutlet UILabel *labelWeight;
