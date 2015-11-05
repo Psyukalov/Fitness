@@ -252,13 +252,6 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FbK-1x-lWP">
                                 <rect key="frame" x="20" y="84" width="374" height="632"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Toa-Rw-kv0">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="188"/>
-                                        <animations/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="188" id="iqF-A9-N37"/>
-                                        </constraints>
-                                    </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Rmf-4R-RFe">
                                         <rect key="frame" x="141" y="16" width="92" height="92"/>
                                         <animations/>
@@ -441,6 +434,13 @@
                                             <segue destination="R7x-xJ-fLw" kind="presentation" identifier="segueToEditPersonalDefaults" id="a42-8z-RMZ"/>
                                         </connections>
                                     </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Toa-Rw-kv0">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="188"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="188" id="iqF-A9-N37"/>
+                                        </constraints>
+                                    </imageView>
                                 </subviews>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
