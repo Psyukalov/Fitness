@@ -19,7 +19,8 @@
                          barDelta:(int)barDelta
                        firstColor:(UIColor *)firstColor
                       secondColor:(UIColor *)secondColor
-                       withBorder:(int)border;
+                     withUpBorder:(int)upBorder
+                    andLeftBorder:(int)leftBorder;
 
 @property (nonatomic) NSArray *values;
 @property (nonatomic) int maxValue;
@@ -27,6 +28,7 @@
 @property (nonatomic) int barDelta;
 @property (nonatomic) UIColor *firstColor;
 @property (nonatomic) UIColor *secondColor;
-@property (nonatomic) int border;
+@property (nonatomic) int upBorder;
+@property (nonatomic) int leftBorder;
 
 @end

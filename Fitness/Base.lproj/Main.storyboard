@@ -252,6 +252,13 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FbK-1x-lWP">
                                 <rect key="frame" x="20" y="84" width="374" height="632"/>
                                 <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Toa-Rw-kv0">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="188"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="188" id="iqF-A9-N37"/>
+                                        </constraints>
+                                    </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Rmf-4R-RFe">
                                         <rect key="frame" x="141" y="16" width="92" height="92"/>
                                         <animations/>
@@ -434,13 +441,6 @@
                                             <segue destination="R7x-xJ-fLw" kind="presentation" identifier="segueToEditPersonalDefaults" id="a42-8z-RMZ"/>
                                         </connections>
                                     </button>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Toa-Rw-kv0">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="188"/>
-                                        <animations/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="188" id="iqF-A9-N37"/>
-                                        </constraints>
-                                    </imageView>
                                 </subviews>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -647,9 +647,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O3T-1c-GGi">
-                                <rect key="frame" x="20" y="272" width="374" height="444"/>
+                                <rect key="frame" x="20" y="262" width="374" height="454"/>
                                 <animations/>
-                                <color key="backgroundColor" red="0.0039215686269999999" green="0.88235294119999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DOA-zA-DKh">
                                 <rect key="frame" x="20" y="84" width="374" height="188"/>
@@ -698,7 +698,7 @@
                             <constraint firstItem="DOA-zA-DKh" firstAttribute="top" secondItem="wgd-Qb-uR0" secondAttribute="bottom" constant="20" id="MkE-RB-gor"/>
                             <constraint firstAttribute="trailing" secondItem="O3T-1c-GGi" secondAttribute="trailing" constant="20" id="ORw-vx-8ol"/>
                             <constraint firstItem="DOA-zA-DKh" firstAttribute="leading" secondItem="edh-FN-N6n" secondAttribute="leading" constant="20" id="OaX-PR-T3C"/>
-                            <constraint firstItem="O3T-1c-GGi" firstAttribute="top" secondItem="DOA-zA-DKh" secondAttribute="bottom" id="T5a-cb-JZf"/>
+                            <constraint firstItem="O3T-1c-GGi" firstAttribute="top" secondItem="DOA-zA-DKh" secondAttribute="bottom" constant="-10" id="T5a-cb-JZf"/>
                             <constraint firstItem="nyf-Pe-l0b" firstAttribute="top" secondItem="wgd-Qb-uR0" secondAttribute="bottom" constant="36" id="TFA-Dt-xr0"/>
                             <constraint firstItem="Uce-Lm-obf" firstAttribute="centerX" secondItem="edh-FN-N6n" secondAttribute="centerX" id="Xl5-Fc-9hH"/>
                             <constraint firstItem="dxY-SI-a8N" firstAttribute="centerX" secondItem="edh-FN-N6n" secondAttribute="centerX" id="aS2-4O-9u1"/>

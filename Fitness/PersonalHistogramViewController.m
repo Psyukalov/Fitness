@@ -59,7 +59,8 @@
                                                                                       green:225
                                                                                        blue:255
                                                                                       alpha:0.6]
-                                                           withBorder:12];
+                                                         withUpBorder:22
+                                                        andLeftBorder:12];
     
     histogram.layer.cornerRadius = 6;
     histogram.clipsToBounds = YES;
