@@ -27,7 +27,7 @@
                                             <animations/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <nil key="highlightedColor"/>
+                                            <color key="highlightedColor" red="0.17254901959999999" green="0.24313725489999999" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5QD-k0-wyh">
                                             <rect key="frame" x="352" y="23" width="47" height="22"/>
@@ -35,13 +35,16 @@
                                             <animations/>
                                             <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                             <color key="textColor" red="0.0039215686274509803" green="0.88235294117647056" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
+                                            <color key="highlightedColor" red="0.17254901959999999" green="0.24313725489999999" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
                                         </label>
                                     </subviews>
                                     <animations/>
                                 </tableViewCellContentView>
                                 <animations/>
                                 <color key="backgroundColor" red="0.17254901959999999" green="0.24313725489999999" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <segue destination="5Li-RK-52M" kind="show" id="kzI-Pd-OPg"/>
+                                </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellExersize" textLabel="PfU-wt-CAI" detailTextLabel="EWT-Xh-2df" rowHeight="68" style="IBUITableViewCellStyleValue1" id="BXV-ub-n1c">
                                 <rect key="frame" x="0.0" y="160" width="414" height="68"/>
@@ -56,7 +59,7 @@
                                             <animations/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <nil key="highlightedColor"/>
+                                            <color key="highlightedColor" red="0.17254901959999999" green="0.24313725489999999" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="EWT-Xh-2df">
                                             <rect key="frame" x="352" y="23" width="47" height="22"/>
@@ -64,7 +67,7 @@
                                             <animations/>
                                             <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                             <color key="textColor" red="0.0039215686274509803" green="0.88235294117647056" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
+                                            <color key="highlightedColor" red="0.17254901959999999" green="0.24313725489999999" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
                                         </label>
                                     </subviews>
                                     <animations/>
@@ -85,7 +88,7 @@
                                             <animations/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <nil key="highlightedColor"/>
+                                            <color key="highlightedColor" red="0.17254901959999999" green="0.24313725489999999" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GF4-Ny-cE8">
                                             <rect key="frame" x="352" y="23" width="47" height="22"/>
@@ -93,7 +96,7 @@
                                             <animations/>
                                             <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                             <color key="textColor" red="0.0039215686269999999" green="0.88235294119999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
+                                            <color key="highlightedColor" red="0.17254901959999999" green="0.24313725489999999" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
                                         </label>
                                     </subviews>
                                     <animations/>
@@ -114,7 +117,7 @@
                                             <animations/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <nil key="highlightedColor"/>
+                                            <color key="highlightedColor" red="0.17254901959999999" green="0.24313725489999999" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5vt-6P-fRC">
                                             <rect key="frame" x="352" y="23" width="47" height="22"/>
@@ -122,7 +125,7 @@
                                             <animations/>
                                             <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                             <color key="textColor" red="0.0039215686269999999" green="0.88235294119999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
+                                            <color key="highlightedColor" red="0.17254901959999999" green="0.24313725489999999" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
                                         </label>
                                     </subviews>
                                     <animations/>
@@ -143,7 +146,7 @@
                                             <animations/>
                                             <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <nil key="highlightedColor"/>
+                                            <color key="highlightedColor" red="0.17254901959999999" green="0.24313725489999999" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Fim-Qq-UPW">
                                             <rect key="frame" x="352" y="23" width="47" height="22"/>
@@ -151,7 +154,7 @@
                                             <animations/>
                                             <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                             <color key="textColor" red="0.0039215686269999999" green="0.88235294119999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
+                                            <color key="highlightedColor" red="0.17254901959999999" green="0.24313725489999999" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
                                         </label>
                                     </subviews>
                                     <animations/>
@@ -175,7 +178,7 @@
                                             <animations/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <nil key="highlightedColor"/>
+                                            <color key="highlightedColor" red="0.17254901959999999" green="0.24313725489999999" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
                                         </label>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wP5-Kc-41a">
                                             <rect key="frame" x="352" y="23" width="47" height="22"/>
@@ -183,7 +186,7 @@
                                             <animations/>
                                             <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                             <color key="textColor" red="0.0039215686269999999" green="0.88235294119999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
+                                            <color key="highlightedColor" red="0.17254901959999999" green="0.24313725489999999" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
                                         </label>
                                     </subviews>
                                     <animations/>
@@ -205,14 +208,13 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
                         <outlet property="mainMenuTableView" destination="WiG-Te-cy6" id="liD-g8-Wg2"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oqs-5u-tFX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="40" y="527"/>
+            <point key="canvasLocation" x="202" y="527"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="h8i-NW-t2q">
@@ -235,7 +237,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ARk-BW-4MR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-453" y="527"/>
+            <point key="canvasLocation" x="-299" y="527"/>
         </scene>
         <!--Personal Office View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -392,7 +394,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="534" y="527"/>
+            <point key="canvasLocation" x="1205" y="527"/>
         </scene>
         <!--Edit Personal Defaults View Controller-->
         <scene sceneID="7pE-FA-MUg">
@@ -503,7 +505,6 @@
                         <animations/>
                         <color key="backgroundColor" red="0.17254901959999999" green="0.24313725489999999" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
                         <outlet property="buttonAgreeDefaults" destination="d36-vr-iRv" id="hSP-Ts-kCW"/>
                         <outlet property="dataPickerBirthday" destination="YlN-f3-1vX" id="F2u-bB-ZYe"/>
@@ -518,7 +519,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4cd-UK-iBY" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1033" y="527"/>
+            <point key="canvasLocation" x="1693" y="527"/>
         </scene>
         <!--Personal Histogram View Controller-->
         <scene sceneID="ms1-xq-1wJ">
@@ -573,7 +574,145 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="noa-zF-mbi" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="40" y="1391"/>
+            <point key="canvasLocation" x="202" y="1523"/>
+        </scene>
+        <!--Menu Table View Controller-->
+        <scene sceneID="62W-rZ-DGO">
+            <objects>
+                <tableViewController id="5Li-RK-52M" customClass="MenuTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="128" sectionHeaderHeight="28" sectionFooterHeight="28" id="4ZS-zv-Yar">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" red="0.17254901959999999" green="0.24313725489999999" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellMenu" rowHeight="128" id="hx7-Aw-bmF" customClass="MenuTableViewCell">
+                                <rect key="frame" x="0.0" y="92" width="414" height="128"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hx7-Aw-bmF" id="Iee-C2-VtE">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="128"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bJW-bI-nMc">
+                                            <rect key="frame" x="30" y="18" width="92" height="92"/>
+                                            <animations/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="92" id="TRC-PQ-zjV"/>
+                                                <constraint firstAttribute="width" constant="92" id="k1x-eF-Cz6"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aTt-5E-6FP">
+                                            <rect key="frame" x="162" y="53" width="182" height="22"/>
+                                            <animations/>
+                                            <color key="tintColor" red="0.0039215686269999999" green="0.88235294119999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="182" id="cmc-59-QA2"/>
+                                                <constraint firstAttribute="height" constant="22" id="sjM-4o-eni"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="highlightedColor" red="0.17254901959999999" green="0.24313725489999999" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                    </subviews>
+                                    <animations/>
+                                    <constraints>
+                                        <constraint firstItem="bJW-bI-nMc" firstAttribute="leading" secondItem="Iee-C2-VtE" secondAttribute="leading" constant="30" id="8tF-AH-1Dk"/>
+                                        <constraint firstItem="aTt-5E-6FP" firstAttribute="leading" secondItem="bJW-bI-nMc" secondAttribute="trailing" constant="40" id="K6v-1s-fys"/>
+                                        <constraint firstItem="aTt-5E-6FP" firstAttribute="top" secondItem="Iee-C2-VtE" secondAttribute="top" constant="53" id="Pjz-h7-o27"/>
+                                        <constraint firstItem="bJW-bI-nMc" firstAttribute="top" secondItem="Iee-C2-VtE" secondAttribute="top" constant="18" id="kJ7-No-PLO"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <animations/>
+                                <color key="backgroundColor" red="0.17254901959999999" green="0.24313725489999999" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="imageMenu" destination="bJW-bI-nMc" id="Am3-d6-w5z"/>
+                                    <outlet property="labelMenu" destination="aTt-5E-6FP" id="4rC-un-8ao"/>
+                                    <segue destination="1BY-Sq-ETv" kind="show" identifier="segueRecipes" id="W2Q-L2-OLd"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="5Li-RK-52M" id="Pcd-a9-cg9"/>
+                            <outlet property="delegate" destination="5Li-RK-52M" id="5of-ES-4ko"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="xT2-qS-EzG">
+                        <barButtonItem key="backBarButtonItem" title="НАЗАД" id="wLy-QP-YBQ"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="table" destination="4ZS-zv-Yar" id="utD-or-Lwo"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DIP-Ld-9lF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1205" y="-354"/>
+        </scene>
+        <!--Recipe Table View Controller-->
+        <scene sceneID="iXo-tP-2Sf">
+            <objects>
+                <tableViewController id="1BY-Sq-ETv" customClass="RecipeTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" id="O0M-wU-jS4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" red="0.17254901959999999" green="0.24313725489999999" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellRecipe" rowHeight="80" id="dg9-mC-c4q" customClass="MenuTableViewCell">
+                                <rect key="frame" x="0.0" y="92" width="414" height="80"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dg9-mC-c4q" id="aoM-tX-hKO">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6gj-z4-cql">
+                                            <rect key="frame" x="30" y="8" width="64" height="64"/>
+                                            <animations/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="64" id="Zo5-wX-KKG"/>
+                                                <constraint firstAttribute="width" constant="64" id="n7b-4R-gQq"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9LM-Fb-NXP">
+                                            <rect key="frame" x="128" y="30" width="278" height="20"/>
+                                            <animations/>
+                                            <color key="tintColor" red="0.0039215686269999999" green="0.88235294119999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="20" id="JkH-KJ-Tdz"/>
+                                                <constraint firstAttribute="width" constant="278" id="zoz-nk-bMQ"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="highlightedColor" red="0.17254901959999999" green="0.24313725489999999" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                    </subviews>
+                                    <animations/>
+                                    <constraints>
+                                        <constraint firstItem="6gj-z4-cql" firstAttribute="top" secondItem="aoM-tX-hKO" secondAttribute="top" constant="8" id="FBu-SC-aLq"/>
+                                        <constraint firstItem="9LM-Fb-NXP" firstAttribute="top" secondItem="aoM-tX-hKO" secondAttribute="top" constant="30" id="Fr2-v5-x3F"/>
+                                        <constraint firstItem="9LM-Fb-NXP" firstAttribute="leading" secondItem="6gj-z4-cql" secondAttribute="trailing" constant="34" id="k84-GF-5ag"/>
+                                        <constraint firstItem="6gj-z4-cql" firstAttribute="leading" secondItem="aoM-tX-hKO" secondAttribute="leading" constant="30" id="xrb-qS-zQO"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <animations/>
+                                <color key="backgroundColor" red="0.17254901959999999" green="0.24313725489999999" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="imageMenu" destination="6gj-z4-cql" id="ahC-CF-v1F"/>
+                                    <outlet property="labelMenu" destination="9LM-Fb-NXP" id="Vrf-I3-HZm"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="1BY-Sq-ETv" id="dhX-O7-fsQ"/>
+                            <outlet property="delegate" destination="1BY-Sq-ETv" id="dMh-ZQ-dQD"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="SLK-bc-iAr">
+                        <barButtonItem key="backBarButtonItem" title="НАЗАД" id="qak-pe-cdC"/>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SRR-JM-KL4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1693" y="-354"/>
         </scene>
     </scenes>
     <resources>
