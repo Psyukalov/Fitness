@@ -37,19 +37,19 @@
     _secondView.layer.shadowOffset = CGSizeMake(0, 8);
     
     NSArray *vals = [NSArray arrayWithObjects:
-                     [NSNumber numberWithInt:15100],
-                     [NSNumber numberWithInt:15500],
-                     [NSNumber numberWithInt:14800],
-                     [NSNumber numberWithInt:15050],
-                     [NSNumber numberWithInt:15200],
-                     [NSNumber numberWithInt:14990],
-                     [NSNumber numberWithInt:15300],
+                     [NSNumber numberWithInt:750],
+                     [NSNumber numberWithInt:1000],
+                     [NSNumber numberWithInt:500],
+                     [NSNumber numberWithInt:0],
+                     [NSNumber numberWithInt:560],
+                     [NSNumber numberWithInt:570],
+                     [NSNumber numberWithInt:580],
                      nil];
     
     ClassHistogram *histogram = [[ClassHistogram alloc] initWithFrame:_secondView.bounds
                                                                values:vals
-                                                             maxValue:19000
-                                                        minTitleValue:6000
+                                                             maxValue:1000
+                                                        minTitleValue:500
                                                              barDelta:0
                                                            firstColor:[UIColor colorWithRed:0
                                                                                       green:225
@@ -59,7 +59,7 @@
                                                                                       green:225
                                                                                        blue:255
                                                                                       alpha:0.6]
-                                                         withUpBorder:22
+                                                         withUpBorder:62
                                                         andLeftBorder:12];
     
     histogram.layer.cornerRadius = 6;

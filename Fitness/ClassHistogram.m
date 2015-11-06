@@ -60,7 +60,7 @@
     CGContextFillRect(context, rect);
     
     double pointSize = 4;
-    double lineLength = self.frame.size.height - self.frame.size.height * self.minTitleValue / self.maxValue;
+    double lineLength = self.frame.size.height - (self.frame.size.height - self.upBorder) * self.minTitleValue / self.maxValue;
 
     double width = self.frame.size.width / self.values.count - self.barDelta;
 
@@ -100,22 +100,22 @@
     // Draw points
     
     CGContextFillRect(context, CGRectMake(self.leftBorder - pointSize / 2, self.upBorder - pointSize / 2, pointSize, pointSize));
-    CGContextFillRect(context, CGRectMake(self.leftBorder - pointSize / 2, self.upBorder + lineLength / 2 - pointSize / 2, pointSize, pointSize));
+    CGContextFillRect(context, CGRectMake(self.leftBorder - pointSize / 2, self.upBorder / 2 + lineLength / 2 - pointSize / 2, pointSize, pointSize));
     CGContextFillRect(context, CGRectMake(self.leftBorder - pointSize / 2, lineLength - pointSize / 2, pointSize, pointSize));
     
     // Make labels
 
-    UILabel *maxValue = [[UILabel alloc] initWithFrame:CGRectMake(self.leftBorder + 6, self.upBorder - 10, 64, 21)];
+    UILabel *maxValue = [[UILabel alloc] initWithFrame:CGRectMake(self.leftBorder + 6, self.upBorder - 10.5, 64, 21)];
     maxValue.text = [NSString stringWithFormat:@"%1d", self.maxValue];
     [maxValue setFont:[UIFont systemFontOfSize:14]];
     [self addSubview:maxValue];
     
-    UILabel *averageValue = [[UILabel alloc] initWithFrame:CGRectMake(self.leftBorder + 6, lineLength / 2, 64, 21)];
+    UILabel *averageValue = [[UILabel alloc] initWithFrame:CGRectMake(self.leftBorder + 6, self.upBorder / 2 + + lineLength / 2 - 10.5, 64, 21)];
     averageValue.text = [NSString stringWithFormat:@"%1d", (self.maxValue - self.minTitleValue) / 2 + self.minTitleValue];
     [averageValue setFont:[UIFont systemFontOfSize:14]];
     [self addSubview:averageValue];
     
-    UILabel *minValue = [[UILabel alloc] initWithFrame:CGRectMake(self.leftBorder + 6, lineLength - 10 , 64, 21)];
+    UILabel *minValue = [[UILabel alloc] initWithFrame:CGRectMake(self.leftBorder + 6, lineLength - 10.5 , 64, 21)];
     minValue.text = [NSString stringWithFormat:@"%1d", self.minTitleValue];
     [minValue setFont:[UIFont systemFontOfSize:14]];
     [self addSubview:minValue];

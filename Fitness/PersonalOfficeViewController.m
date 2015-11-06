@@ -43,7 +43,7 @@
     _imageFirstAvatar.layer.cornerRadius = 6;
     _imageFirstAvatar.clipsToBounds = YES;
     CALayer *secondAvatarLayer = [CALayer layer];
-    secondAvatarLayer.frame = _imageFirstAvatar.frame;
+    secondAvatarLayer.frame = _imageFirstAvatar.bounds;
     secondAvatarLayer.cornerRadius = 2;
     secondAvatarLayer.backgroundColor = [[UIColor blackColor] CGColor];
     secondAvatarLayer.opacity = 0.5;
@@ -82,19 +82,7 @@
     
     _buttonClearDefaults.layer.cornerRadius = 15;
     _buttonClearDefaults.clipsToBounds = YES;
-    
-    // Line
-    
-    //UIBezierPath *path = [UIBezierPath bezierPath];
-    //[path moveToPoint:CGPointMake(0, 500)];
-    //[path addLineToPoint:CGPointMake(self.view.frame.size.width - 40, 500)];
-    //CAShapeLayer *shapeLineLayer = [CAShapeLayer layer];
-    //shapeLineLayer.path = [path CGPath];
-    //shapeLineLayer.strokeColor = [[UIColor blackColor] CGColor];
-    //shapeLineLayer.lineWidth = 0.4;
-    //shapeLineLayer.fillColor = [[UIColor blackColor] CGColor];
-    //[_secondView.layer addSublayer:shapeLineLayer];
-    
+
     // Buy button
     
     _buttonBuyApp.layer.cornerRadius = 6;
@@ -126,9 +114,9 @@
 
 }
 
-- (IBAction)buttonClearDefaults:(id)sender {
+- (IBAction)buttonEditPerson:(id)sender {
 
-    //[person clearDefaults];
+    //
 
 }
 

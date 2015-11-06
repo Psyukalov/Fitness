@@ -28,7 +28,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *buttonClearDefaults;
 
 - (IBAction)buttonChangeAvatar:(id)sender;
-- (IBAction)buttonClearDefaults:(id)sender;
+- (IBAction)buttonEditPerson:(id)sender;
 - (IBAction)buttonBuyApp:(id)sender;
 
 @end
