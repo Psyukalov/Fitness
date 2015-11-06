@@ -13,12 +13,14 @@
 
 @property (nonatomic, readwrite) NSData *avatar;
 @property (nonatomic, readwrite) NSString *name;
-@property (nonatomic, readwrite) NSDate *birthday;
 @property (nonatomic, readonly) NSDate *startDate;
-@property (nonatomic, readwrite) NSString *gender;
 @property (nonatomic, readwrite) double weight;
 @property (nonatomic, readwrite) double growth;
+@property (nonatomic, readwrite) NSDate *birthday;
+@property (nonatomic, readwrite) NSString *gender;
 
+- (void)save;
+- (void)load;
 - (void)setStartDate;
 - (void)clearDefaults;
 

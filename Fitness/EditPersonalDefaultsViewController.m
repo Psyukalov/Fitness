@@ -108,6 +108,8 @@
     self.person.birthday = _dataPickerBirthday.date;
     self.person.gender = listGender[[_pickerGender selectedRowInComponent:0]];
     
+    [self.person save];
+    
     [self dismissViewControllerAnimated:YES completion:nil];
     
 }

@@ -27,6 +27,8 @@
     [super viewDidLoad];
 
     person = [[ClassPerson alloc] init];
+    [person load];
+    
     self.navigationItem.title = @"НАСТРОЙКИ";
     
     // Second view with black shadow

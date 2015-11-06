@@ -43,13 +43,11 @@
 - (void)setAvatar:(NSData *)avatar {
     
     _avatar = avatar;
-    [defaults setObject:_avatar forKey:@"avatar"];
     
 }
 
 - (NSData *)avatar {
     
-    _avatar = [defaults objectForKey:@"avatar"];
     return _avatar;
     
 }
@@ -59,50 +57,68 @@
 - (void)setName:(NSString *)name {
     
     _name = name;
-    [defaults setObject:_name forKey:@"name"];
-    
+        
 }
 
 - (NSString *)name {
     
-    _name = [defaults objectForKey:@"name"];
     return _name;
+    
+}
+
+// Start date
+
+- (void)setStartDate {
+    
+    _startDate = [NSDate date];
+    
+}
+
+- (NSDate *)startDate {
+    
+    return _startDate;
+    
+}
+
+// Weight
+
+- (void)setWeight:(double)weight {
+    
+    _weight = weight;
+    
+}
+
+- (double)weight {
+    
+    return _weight;
+    
+}
+
+// Growth
+
+- (void)setGrowth:(double)growth {
+    
+    _growth = growth;
+    
+}
+
+- (double)growth {
+    
+    return _growth;
     
 }
 
 // Birthday
 
 - (void)setBirthday:(NSDate *)birthday {
-    
-    //if (birthday < [NSDate date]) {
         
-        _birthday = birthday;
-        [defaults setObject:_birthday forKey:@"birthday"];
-        
-    //}
+    _birthday = birthday;
     
 }
 
 - (NSDate *)birthday {
     
-    _birthday = [defaults objectForKey:@"birthday"];
     return _birthday;
-    
-}
-
-//Start date
-
-- (void)setStartDate {
-    
-    _startDate = [NSDate date];
-    [defaults setObject:_startDate forKey:@"start"];
-    
-}
-
-- (NSDate *)startDate {
-    
-    _startDate = [defaults objectForKey:@"start"];
-    return _startDate;
     
 }
 
@@ -120,50 +136,39 @@
         
     }
     
-    [defaults setObject:_gender forKey:@"gender"];
-    
 }
 
 - (NSString *)gender {
     
-    _gender = [defaults objectForKey:@"gender"];
     return _gender;
     
 }
 
-// Weight
-
-- (void)setWeight:(double)weight {
-    
-    _weight = weight;
-    [defaults setDouble:_weight forKey:@"weight"];
-    
-}
-
-- (double)weight {
-    
-    _weight = [defaults doubleForKey:@"weight"];
-    return _weight;
-    
-}
-
-// Growth
-
-- (void)setGrowth:(double)growth {
-    
-    _growth = growth;
-    [defaults setDouble:_growth forKey:@"growth"];
-    
-}
-
-- (double)growth {
-    
-    _growth = [defaults doubleForKey:@"growth"];
-    return _growth;
-    
-}
-
 // Methods
+
+- (void)save {
+    
+    [defaults setObject:_avatar forKey:@"avatar"];
+    [defaults setObject:_name forKey:@"name"];
+    [defaults setObject:_startDate forKey:@"start"];
+    [defaults setDouble:_weight forKey:@"weight"];
+    [defaults setDouble:_growth forKey:@"growth"];
+    [defaults setObject:_birthday forKey:@"birthday"];
+    [defaults setObject:_gender forKey:@"gender"];
+    
+}
+
+- (void)load {
+    
+    _avatar = [defaults objectForKey:@"avatar"];
+    _name = [defaults objectForKey:@"name"];
+    _startDate = [defaults objectForKey:@"start"];
+    _weight = [defaults doubleForKey:@"weight"];
+    _growth = [defaults doubleForKey:@"growth"];
+    _birthday = [defaults objectForKey:@"birthday"];
+    _gender = [defaults objectForKey:@"gender"];
+    
+}
 
 - (void)clearDefaults {
     
