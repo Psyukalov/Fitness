@@ -148,7 +148,6 @@
 
 - (void)save {
     
-    [defaults setObject:_avatar forKey:@"avatar"];
     [defaults setObject:_name forKey:@"name"];
     [defaults setObject:_startDate forKey:@"start"];
     [defaults setDouble:_weight forKey:@"weight"];
@@ -158,15 +157,62 @@
     
 }
 
+- (void)saveAvatar {
+    
+    [defaults setObject:_avatar forKey:@"avatar"];
+    
+}
+
 - (void)load {
     
-    _avatar = [defaults objectForKey:@"avatar"];
     _name = [defaults objectForKey:@"name"];
     _startDate = [defaults objectForKey:@"start"];
     _weight = [defaults doubleForKey:@"weight"];
     _growth = [defaults doubleForKey:@"growth"];
     _birthday = [defaults objectForKey:@"birthday"];
     _gender = [defaults objectForKey:@"gender"];
+    
+    if (_name == nil) {
+        
+        _name = @"Введите имя";
+        
+    }
+    
+    if (_weight == 0) {
+        
+        _weight = 80;
+        
+    }
+    
+    if (_growth == 0) {
+        
+        _growth = 180;
+        
+    }
+    
+    if (_birthday == nil) {
+        
+        _birthday = [NSDate date];
+
+    }
+    
+    if (_startDate == nil) {
+        
+        _startDate = [NSDate date];
+        
+    }
+    
+    if (_gender == nil) {
+        
+        _gender = @"Мужской";
+        
+    }
+    
+}
+
+- (void)loadAvatar {
+    
+    _avatar = [defaults objectForKey:@"avatar"];
     
 }
 

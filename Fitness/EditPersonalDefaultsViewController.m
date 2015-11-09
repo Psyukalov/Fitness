@@ -56,13 +56,15 @@
 
     _labelGrowth.text = [NSString stringWithFormat:@"Рост %1.2f м", self.person.growth];
     
-    _stepperChangeWeight.value = self.person.weight;
     _stepperChangeWeight.minimumValue = 10;
+    _stepperChangeWeight.maximumValue = 250;
     _stepperChangeWeight.stepValue = 0.1;
+    _stepperChangeWeight.value = self.person.weight;
     
-    _stepperChangeGrowth.value = self.person.growth;
     _stepperChangeGrowth.minimumValue = 1;
+    _stepperChangeGrowth.maximumValue = 220;
     _stepperChangeGrowth.stepValue = 0.01;
+    _stepperChangeGrowth.value = self.person.growth;
     
     _dataPickerBirthday.maximumDate = [NSDate date];
     _dataPickerBirthday.date = self.person.birthday;

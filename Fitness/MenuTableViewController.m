@@ -27,8 +27,6 @@
     
     [super viewDidLoad];
     
-    //
-    
     imagesArray = @[@"breakfast@2x.png",
                     @"secondBreakfast@2x.png",
                     @"lanch@2x.png",
@@ -43,8 +41,6 @@
                      @"ВТОРОЙ ЗАВТРАК",
                      @"ОБЕД",
                      @"УЖИН",];
-    
-    //
     
 }
 

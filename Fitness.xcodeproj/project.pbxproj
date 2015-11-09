@@ -19,27 +19,27 @@
 		C3C5A89A1BDF64B000D2BD1C /* FitnessTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C5A8991BDF64B000D2BD1C /* FitnessTests.m */; };
 		C3C5A8A51BDF64B000D2BD1C /* FitnessUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C5A8A41BDF64B000D2BD1C /* FitnessUITests.m */; };
 		C3C5A8BD1BDF785600D2BD1C /* PersonalOfficeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C5A8BC1BDF785600D2BD1C /* PersonalOfficeViewController.m */; };
-		C3D164831BE79D900064ABA2 /* PersonalHistogramViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D164821BE79D900064ABA2 /* PersonalHistogramViewController.m */; settings = {ASSET_TAGS = (); }; };
-		C3D164881BE7AD380064ABA2 /* buttonGear@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3D164871BE7AD380064ABA2 /* buttonGear@2x.png */; settings = {ASSET_TAGS = (); }; };
-		C3D1648B1BE7AEE90064ABA2 /* ClassHistogram.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D164891BE7AEE90064ABA2 /* ClassHistogram.m */; settings = {ASSET_TAGS = (); }; };
-		C3FE289C1BECB8CF00B6D7EC /* MenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FE289B1BECB8CF00B6D7EC /* MenuTableViewController.m */; settings = {ASSET_TAGS = (); }; };
-		C3FE289F1BECB90300B6D7EC /* MenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FE289E1BECB90300B6D7EC /* MenuTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
-		C3FE28A41BECBC1800B6D7EC /* dinner@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3FE28A01BECBC1800B6D7EC /* dinner@2x.png */; settings = {ASSET_TAGS = (); }; };
-		C3FE28A51BECBC1800B6D7EC /* lanch@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3FE28A11BECBC1800B6D7EC /* lanch@2x.png */; settings = {ASSET_TAGS = (); }; };
-		C3FE28A61BECBC1800B6D7EC /* secondBreakfast@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3FE28A21BECBC1800B6D7EC /* secondBreakfast@2x.png */; settings = {ASSET_TAGS = (); }; };
-		C3FE28A71BECBC1800B6D7EC /* breakfast@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3FE28A31BECBC1800B6D7EC /* breakfast@2x.png */; settings = {ASSET_TAGS = (); }; };
-		C3FE28B41BECC41B00B6D7EC /* breakfastHighlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3FE28B01BECC41B00B6D7EC /* breakfastHighlighted@2x.png */; settings = {ASSET_TAGS = (); }; };
-		C3FE28B51BECC41B00B6D7EC /* dinnerHighlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3FE28B11BECC41B00B6D7EC /* dinnerHighlighted@2x.png */; settings = {ASSET_TAGS = (); }; };
-		C3FE28B61BECC41B00B6D7EC /* lanchHighlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3FE28B21BECC41B00B6D7EC /* lanchHighlighted@2x.png */; settings = {ASSET_TAGS = (); }; };
-		C3FE28B71BECC41B00B6D7EC /* secondBreakfastHighlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3FE28B31BECC41B00B6D7EC /* secondBreakfastHighlighted@2x.png */; settings = {ASSET_TAGS = (); }; };
-		C3FE28BE1BECCDB500B6D7EC /* RecipeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FE28BD1BECCDB500B6D7EC /* RecipeTableViewController.m */; settings = {ASSET_TAGS = (); }; };
-		C3FE28C21BECDAA200B6D7EC /* Recipes.json in Resources */ = {isa = PBXBuildFile; fileRef = C3FE28C11BECDAA200B6D7EC /* Recipes.json */; settings = {ASSET_TAGS = (); }; };
-		C3FE28C91BECDD9700B6D7EC /* ClassParserJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FE28C81BECDD9700B6D7EC /* ClassParserJSON.m */; settings = {ASSET_TAGS = (); }; };
-		C3FE28CF1BECE26B00B6D7EC /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C3FE28CA1BECE26B00B6D7EC /* 1.jpg */; settings = {ASSET_TAGS = (); }; };
-		C3FE28D01BECE26B00B6D7EC /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C3FE28CB1BECE26B00B6D7EC /* 2.jpg */; settings = {ASSET_TAGS = (); }; };
-		C3FE28D11BECE26B00B6D7EC /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C3FE28CC1BECE26B00B6D7EC /* 3.jpg */; settings = {ASSET_TAGS = (); }; };
-		C3FE28D21BECE26B00B6D7EC /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C3FE28CD1BECE26B00B6D7EC /* 4.jpg */; settings = {ASSET_TAGS = (); }; };
-		C3FE28D31BECE26B00B6D7EC /* 5.png in Resources */ = {isa = PBXBuildFile; fileRef = C3FE28CE1BECE26B00B6D7EC /* 5.png */; settings = {ASSET_TAGS = (); }; };
+		C3D164831BE79D900064ABA2 /* PersonalHistogramViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D164821BE79D900064ABA2 /* PersonalHistogramViewController.m */; };
+		C3D164881BE7AD380064ABA2 /* buttonGear@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3D164871BE7AD380064ABA2 /* buttonGear@2x.png */; };
+		C3D1648B1BE7AEE90064ABA2 /* ClassHistogram.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D164891BE7AEE90064ABA2 /* ClassHistogram.m */; };
+		C3FE289C1BECB8CF00B6D7EC /* MenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FE289B1BECB8CF00B6D7EC /* MenuTableViewController.m */; };
+		C3FE289F1BECB90300B6D7EC /* MenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FE289E1BECB90300B6D7EC /* MenuTableViewCell.m */; };
+		C3FE28A41BECBC1800B6D7EC /* dinner@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3FE28A01BECBC1800B6D7EC /* dinner@2x.png */; };
+		C3FE28A51BECBC1800B6D7EC /* lanch@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3FE28A11BECBC1800B6D7EC /* lanch@2x.png */; };
+		C3FE28A61BECBC1800B6D7EC /* secondBreakfast@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3FE28A21BECBC1800B6D7EC /* secondBreakfast@2x.png */; };
+		C3FE28A71BECBC1800B6D7EC /* breakfast@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3FE28A31BECBC1800B6D7EC /* breakfast@2x.png */; };
+		C3FE28B41BECC41B00B6D7EC /* breakfastHighlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3FE28B01BECC41B00B6D7EC /* breakfastHighlighted@2x.png */; };
+		C3FE28B51BECC41B00B6D7EC /* dinnerHighlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3FE28B11BECC41B00B6D7EC /* dinnerHighlighted@2x.png */; };
+		C3FE28B61BECC41B00B6D7EC /* lanchHighlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3FE28B21BECC41B00B6D7EC /* lanchHighlighted@2x.png */; };
+		C3FE28B71BECC41B00B6D7EC /* secondBreakfastHighlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3FE28B31BECC41B00B6D7EC /* secondBreakfastHighlighted@2x.png */; };
+		C3FE28BE1BECCDB500B6D7EC /* RecipeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FE28BD1BECCDB500B6D7EC /* RecipeTableViewController.m */; };
+		C3FE28C21BECDAA200B6D7EC /* Recipes.json in Resources */ = {isa = PBXBuildFile; fileRef = C3FE28C11BECDAA200B6D7EC /* Recipes.json */; };
+		C3FE28C91BECDD9700B6D7EC /* ClassParserJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FE28C81BECDD9700B6D7EC /* ClassParserJSON.m */; };
+		C3FE28CF1BECE26B00B6D7EC /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C3FE28CA1BECE26B00B6D7EC /* 1.jpg */; };
+		C3FE28D01BECE26B00B6D7EC /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C3FE28CB1BECE26B00B6D7EC /* 2.jpg */; };
+		C3FE28D11BECE26B00B6D7EC /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C3FE28CC1BECE26B00B6D7EC /* 3.jpg */; };
+		C3FE28D21BECE26B00B6D7EC /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C3FE28CD1BECE26B00B6D7EC /* 4.jpg */; };
+		C3FE28D31BECE26B00B6D7EC /* 5.png in Resources */ = {isa = PBXBuildFile; fileRef = C3FE28CE1BECE26B00B6D7EC /* 5.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -270,13 +270,13 @@
 		C3FE28B81BECCB7400B6D7EC /* Recipes */ = {
 			isa = PBXGroup;
 			children = (
+				C3FE28BC1BECCDB500B6D7EC /* RecipeTableViewController.h */,
+				C3FE28BD1BECCDB500B6D7EC /* RecipeTableViewController.m */,
 				C3FE28CA1BECE26B00B6D7EC /* 1.jpg */,
 				C3FE28CB1BECE26B00B6D7EC /* 2.jpg */,
 				C3FE28CC1BECE26B00B6D7EC /* 3.jpg */,
 				C3FE28CD1BECE26B00B6D7EC /* 4.jpg */,
 				C3FE28CE1BECE26B00B6D7EC /* 5.png */,
-				C3FE28BC1BECCDB500B6D7EC /* RecipeTableViewController.h */,
-				C3FE28BD1BECCDB500B6D7EC /* RecipeTableViewController.m */,
 				C3FE28C11BECDAA200B6D7EC /* Recipes.json */,
 			);
 			name = Recipes;

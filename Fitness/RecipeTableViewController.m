@@ -55,7 +55,6 @@
     NSString *request = [NSString stringWithFormat:@"recipes.%@", recipeType];
     
     names = [ClassParserJSON createArrayWithValueKeyPath:request andValueKey:@"name"];
-    
     images = [ClassParserJSON createArrayWithValueKeyPath:request andValueKey:@"image"];
     
 }

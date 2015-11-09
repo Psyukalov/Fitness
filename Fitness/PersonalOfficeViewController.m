@@ -15,6 +15,7 @@
     @public
     ClassPerson *person;
     NSDateFormatter *formatter;
+    NSString *startDate;
     
 }
 
@@ -27,7 +28,9 @@
     [super viewDidLoad];
 
     person = [[ClassPerson alloc] init];
+    
     [person load];
+    [person loadAvatar];
     
     self.navigationItem.title = @"НАСТРОЙКИ";
     
@@ -59,21 +62,21 @@
     
     // Name
     
-    _labelName.text = person.name;
+//    _labelName.text = person.name;
     
     // Start date
     
     formatter = [[NSDateFormatter alloc] init];
     [formatter setDateFormat:@"dd.MM.yyyy"];
-    NSString *startDate = [formatter stringFromDate:person.startDate];
-    _labelStartDate.text = [NSString stringWithFormat:@"мы вместе с %@", startDate];
+    startDate = [formatter stringFromDate:person.startDate];
+//    _labelStartDate.text = [NSString stringWithFormat:@"мы вместе с %@", startDate];
     
     // Bio
     
-    _labelWeight.text = [NSString stringWithFormat:@"%1.1f кг", person.weight];
-    _labelGrowth.text = [NSString stringWithFormat:@"%1.2f м", person.growth];
-    _labelBirthday.text = [formatter stringFromDate:person.birthday];
-    _labelGender.text = person.gender;
+//    _labelWeight.text = [NSString stringWithFormat:@"%1.1f кг", person.weight];
+//    _labelGrowth.text = [NSString stringWithFormat:@"%1.2f м", person.growth];
+//    _labelBirthday.text = [formatter stringFromDate:person.birthday];
+//    _labelGender.text = person.gender;
     
     // Change avatar
     
@@ -89,6 +92,17 @@
     
     _buttonBuyApp.layer.cornerRadius = 6;
     _buttonBuyApp.clipsToBounds = YES;
+    
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    
+    _labelName.text = person.name;
+    _labelStartDate.text = [NSString stringWithFormat:@"мы вместе с %@", startDate];
+    _labelWeight.text = [NSString stringWithFormat:@"%1.1f кг", person.weight];
+    _labelGrowth.text = [NSString stringWithFormat:@"%1.2f м", person.growth];
+    _labelBirthday.text = [formatter stringFromDate:person.birthday];
+    _labelGender.text = person.gender;
     
 }
 
@@ -112,6 +126,7 @@
     _imageFirstAvatar.image = image;
     _imageSecondAvatar.image = image;
     person.avatar = UIImagePNGRepresentation(_imageFirstAvatar.image);
+    [person saveAvatar];
     [self dismissViewControllerAnimated:true completion:nil];
 
 }

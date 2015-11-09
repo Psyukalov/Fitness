@@ -21,6 +21,8 @@
 
 - (void)save;
 - (void)load;
+- (void)saveAvatar;
+- (void)loadAvatar;
 - (void)setStartDate;
 - (void)clearDefaults;
 
