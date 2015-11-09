@@ -698,6 +698,7 @@
                                 <connections>
                                     <outlet property="imageMenu" destination="6gj-z4-cql" id="ahC-CF-v1F"/>
                                     <outlet property="labelMenu" destination="9LM-Fb-NXP" id="Vrf-I3-HZm"/>
+                                    <segue destination="4EI-wi-Fcd" kind="show" identifier="segueDetailRecipe" id="jmJ-0h-1ve"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -709,10 +710,68 @@
                     <navigationItem key="navigationItem" id="SLK-bc-iAr">
                         <barButtonItem key="backBarButtonItem" title="НАЗАД" id="qak-pe-cdC"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableRecipe" destination="O0M-wU-jS4" id="UPN-MK-Vdt"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SRR-JM-KL4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1693" y="-314"/>
+        </scene>
+        <!--Detail Recipe View Controller-->
+        <scene sceneID="eaM-aC-4oE">
+            <objects>
+                <viewController id="4EI-wi-Fcd" customClass="DetailRecipeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ep9-AE-cwR"/>
+                        <viewControllerLayoutGuide type="bottom" id="wp2-nS-IPr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pDh-6d-kmW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6gH-TM-sq6">
+                                <rect key="frame" x="20" y="72" width="374" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ncK-7a-egH">
+                                <rect key="frame" x="20" y="112" width="374" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V6K-SK-Aj9">
+                                <rect key="frame" x="20" y="160" width="374" height="189"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jSj-WT-DV9">
+                                <rect key="frame" x="20" y="357" width="374" height="371"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.17254901959999999" green="0.24313725489999999" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="l1" destination="6gH-TM-sq6" id="2D1-RQ-IHX"/>
+                        <outlet property="l2" destination="ncK-7a-egH" id="1TE-eX-SCD"/>
+                        <outlet property="l3" destination="V6K-SK-Aj9" id="ZYq-5r-2GX"/>
+                        <outlet property="l4" destination="jSj-WT-DV9" id="nai-PR-t1M"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fSn-gE-52f" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2178" y="-314"/>
         </scene>
     </scenes>
     <resources>

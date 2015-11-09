@@ -10,10 +10,13 @@
 #import <UIKit/UIKit.h>
 #import "MenuTableViewCell.h"
 #import "ClassParserJSON.h"
+#import "ClassRecipe.h"
+#import "DetailRecipeViewController.h"
 
 
 @interface RecipeTableViewController : UITableViewController
 
 @property (nonatomic, readwrite) int menuType;
+@property (strong, nonatomic) IBOutlet UITableView *tableRecipe;
 
 @end

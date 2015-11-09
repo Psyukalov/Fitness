@@ -12,8 +12,9 @@
 
 @interface RecipeTableViewController () {
     
-    NSArray *names;
-    NSArray *images;
+    ClassRecipe *recipes;
+//    NSArray *names;
+//    NSArray *images;
     
 }
 
@@ -54,8 +55,15 @@
     
     NSString *request = [NSString stringWithFormat:@"recipes.%@", recipeType];
     
-    names = [ClassParserJSON createArrayWithValueKeyPath:request andValueKey:@"name"];
-    images = [ClassParserJSON createArrayWithValueKeyPath:request andValueKey:@"image"];
+    recipes = [[ClassRecipe alloc] init];
+    
+    recipes.name = [ClassParserJSON createArrayWithValueKeyPath:request andValueKey:@"name"];
+    recipes.image = [ClassParserJSON createArrayWithValueKeyPath:request andValueKey:@"image"];
+    recipes.ingridients = [ClassParserJSON createArrayWithValueKeyPath:request andValueKey:@"ingridients"];
+    recipes.textRecipe = [ClassParserJSON createArrayWithValueKeyPath:request andValueKey:@"recipe"];
+    
+//    names = [ClassParserJSON createArrayWithValueKeyPath:request andValueKey:@"name"];
+//    images = [ClassParserJSON createArrayWithValueKeyPath:request andValueKey:@"image"];
     
 }
 
@@ -67,7 +75,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 
-    return [names count];
+    return [recipes.name count];
     
 }
 
@@ -76,8 +84,8 @@
     
     MenuTableViewCell *prototypeCell = [tableView dequeueReusableCellWithIdentifier:@"cellRecipe"];
     
-    prototypeCell.imageMenu.image = [UIImage imageNamed:[images objectAtIndex:indexPath.row]];
-    prototypeCell.labelMenu.text = [names objectAtIndex:indexPath.row];
+    prototypeCell.imageMenu.image = [UIImage imageNamed:[recipes.image objectAtIndex:indexPath.row]];
+    prototypeCell.labelMenu.text = [recipes.name objectAtIndex:indexPath.row];
 
     return prototypeCell;
 
@@ -118,14 +126,18 @@
 }
 */
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+
+    if ([segue.identifier isEqualToString:@"segueDetailRecipe"]) {
+        
+        NSIndexPath *indexPath = [_tableRecipe indexPathForSelectedRow];
+        [segue.destinationViewController setT1:recipes.name[indexPath.row]];
+        [segue.destinationViewController setT2:recipes.image[indexPath.row]];
+        [segue.destinationViewController setT3:recipes.ingridients[indexPath.row]];
+        [segue.destinationViewController setT4:recipes.textRecipe[indexPath.row]];
+        
+    }
+    
 }
-*/
 
 @end

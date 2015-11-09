@@ -69,6 +69,9 @@
     
     person = [[ClassPerson alloc] init];
     
+    [person load];
+    [person loadAvatar];
+    
     // First avatar with black layer
     
     _imageFirstAvatar.image = [UIImage imageWithData:person.avatar];

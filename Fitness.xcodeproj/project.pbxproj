@@ -19,6 +19,8 @@
 		C3C5A89A1BDF64B000D2BD1C /* FitnessTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C5A8991BDF64B000D2BD1C /* FitnessTests.m */; };
 		C3C5A8A51BDF64B000D2BD1C /* FitnessUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C5A8A41BDF64B000D2BD1C /* FitnessUITests.m */; };
 		C3C5A8BD1BDF785600D2BD1C /* PersonalOfficeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C5A8BC1BDF785600D2BD1C /* PersonalOfficeViewController.m */; };
+		C3CF8AC91BF0D8C000E3547F /* ClassRecipe.m in Sources */ = {isa = PBXBuildFile; fileRef = C3CF8AC81BF0D8C000E3547F /* ClassRecipe.m */; };
+		C3CF8ACD1BF0DB0200E3547F /* DetailRecipeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3CF8ACC1BF0DB0200E3547F /* DetailRecipeViewController.m */; };
 		C3D164831BE79D900064ABA2 /* PersonalHistogramViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D164821BE79D900064ABA2 /* PersonalHistogramViewController.m */; };
 		C3D164881BE7AD380064ABA2 /* buttonGear@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3D164871BE7AD380064ABA2 /* buttonGear@2x.png */; };
 		C3D1648B1BE7AEE90064ABA2 /* ClassHistogram.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D164891BE7AEE90064ABA2 /* ClassHistogram.m */; };
@@ -84,6 +86,10 @@
 		C3C5A8A61BDF64B000D2BD1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C3C5A8BB1BDF785600D2BD1C /* PersonalOfficeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalOfficeViewController.h; sourceTree = "<group>"; };
 		C3C5A8BC1BDF785600D2BD1C /* PersonalOfficeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalOfficeViewController.m; sourceTree = "<group>"; };
+		C3CF8AC71BF0D8C000E3547F /* ClassRecipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassRecipe.h; sourceTree = "<group>"; };
+		C3CF8AC81BF0D8C000E3547F /* ClassRecipe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassRecipe.m; sourceTree = "<group>"; };
+		C3CF8ACB1BF0DB0200E3547F /* DetailRecipeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailRecipeViewController.h; sourceTree = "<group>"; };
+		C3CF8ACC1BF0DB0200E3547F /* DetailRecipeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailRecipeViewController.m; sourceTree = "<group>"; };
 		C3D164811BE79D900064ABA2 /* PersonalHistogramViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalHistogramViewController.h; sourceTree = "<group>"; };
 		C3D164821BE79D900064ABA2 /* PersonalHistogramViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalHistogramViewController.m; sourceTree = "<group>"; };
 		C3D164871BE7AD380064ABA2 /* buttonGear@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "buttonGear@2x.png"; path = "../../../Desktop/buttonGear@2x.png"; sourceTree = "<group>"; };
@@ -170,6 +176,7 @@
 		C3C5A87E1BDF64B000D2BD1C /* Fitness */ = {
 			isa = PBXGroup;
 			children = (
+				C3CF8ACA1BF0DADC00E3547F /* DetailRecipe */,
 				C3FE28C31BECDD2700B6D7EC /* Parcer */,
 				C3FE28B81BECCB7400B6D7EC /* Recipes */,
 				C3FE28991BECB8AE00B6D7EC /* Menu */,
@@ -237,6 +244,15 @@
 			name = PersonalOffice;
 			sourceTree = "<group>";
 		};
+		C3CF8ACA1BF0DADC00E3547F /* DetailRecipe */ = {
+			isa = PBXGroup;
+			children = (
+				C3CF8ACB1BF0DB0200E3547F /* DetailRecipeViewController.h */,
+				C3CF8ACC1BF0DB0200E3547F /* DetailRecipeViewController.m */,
+			);
+			name = DetailRecipe;
+			sourceTree = "<group>";
+		};
 		C3D164801BE79D380064ABA2 /* PersonalHistogram */ = {
 			isa = PBXGroup;
 			children = (
@@ -272,6 +288,8 @@
 			children = (
 				C3FE28BC1BECCDB500B6D7EC /* RecipeTableViewController.h */,
 				C3FE28BD1BECCDB500B6D7EC /* RecipeTableViewController.m */,
+				C3CF8AC71BF0D8C000E3547F /* ClassRecipe.h */,
+				C3CF8AC81BF0D8C000E3547F /* ClassRecipe.m */,
 				C3FE28CA1BECE26B00B6D7EC /* 1.jpg */,
 				C3FE28CB1BECE26B00B6D7EC /* 2.jpg */,
 				C3FE28CC1BECE26B00B6D7EC /* 3.jpg */,
@@ -446,7 +464,9 @@
 				C3FE28BE1BECCDB500B6D7EC /* RecipeTableViewController.m in Sources */,
 				C3FE289C1BECB8CF00B6D7EC /* MenuTableViewController.m in Sources */,
 				204EF2391BE1127B00F77F88 /* ClassPerson.m in Sources */,
+				C3CF8AC91BF0D8C000E3547F /* ClassRecipe.m in Sources */,
 				C3C5A8BD1BDF785600D2BD1C /* PersonalOfficeViewController.m in Sources */,
+				C3CF8ACD1BF0DB0200E3547F /* DetailRecipeViewController.m in Sources */,
 				C3FE289F1BECB90300B6D7EC /* MenuTableViewCell.m in Sources */,
 				C3C5A8811BDF64B000D2BD1C /* main.m in Sources */,
 				204EF23F1BE1129000F77F88 /* MainMenuTableViewController.m in Sources */,
