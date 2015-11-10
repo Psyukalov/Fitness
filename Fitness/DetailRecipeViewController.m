@@ -17,17 +17,22 @@
 
 @implementation DetailRecipeViewController
 
-@synthesize t1, t2, t3, t4;
+@synthesize caption, nameImage, ingridients, textRecipe;
 
 - (void)viewDidLoad {
     
     [super viewDidLoad];
-
-    _l1.text = t1;
-    _l2.text = t2;
-    _l3.text = t3;
-    _l4.text = t4;
-
+    
+    _scrollView.layer.cornerRadius = 6;
+    _scrollView.layer.shadowColor = [[UIColor blackColor] CGColor];
+    _scrollView.layer.shadowRadius = 6;
+    _scrollView.layer.shadowOpacity = 0.5;
+    _scrollView.layer.shadowOffset = CGSizeMake(0, 8);
+    _scrollView.clipsToBounds = YES;    
+    
+    _labelCaption.text = caption;
+    _imageRecipe.image = [UIImage imageNamed:nameImage];
+    
 }
 
 @end

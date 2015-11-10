@@ -40,7 +40,7 @@
                      [NSNumber numberWithInt:750],
                      [NSNumber numberWithInt:1000],
                      [NSNumber numberWithInt:500],
-                     [NSNumber numberWithInt:0],
+                     [NSNumber numberWithInt:600],
                      [NSNumber numberWithInt:560],
                      [NSNumber numberWithInt:570],
                      [NSNumber numberWithInt:580],
@@ -51,13 +51,13 @@
                                                              maxValue:1000
                                                         minTitleValue:500
                                                              barDelta:0
-                                                           firstColor:[UIColor colorWithRed:0
-                                                                                      green:225
-                                                                                       blue:255
+                                                           firstColor:[UIColor colorWithRed:1./255
+                                                                                      green:225./255
+                                                                                       blue:255./255
                                                                                       alpha:1.0]
-                                                          secondColor:[UIColor colorWithRed:0
-                                                                                      green:225
-                                                                                       blue:255
+                                                          secondColor:[UIColor colorWithRed:4./255
+                                                                                      green:225./255
+                                                                                       blue:255./255
                                                                                       alpha:0.6]
                                                          withUpBorder:62
                                                         andLeftBorder:12];

@@ -26,8 +26,8 @@
 @property (nonatomic) int maxValue;
 @property (nonatomic) int minTitleValue;
 @property (nonatomic) int barDelta;
-@property (nonatomic) UIColor *firstColor;
-@property (nonatomic) UIColor *secondColor;
+@property (strong, nonatomic) UIColor *firstColor;
+@property (strong, nonatomic) UIColor *secondColor;
 @property (nonatomic) int upBorder;
 @property (nonatomic) int leftBorder;
 

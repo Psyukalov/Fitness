@@ -131,10 +131,10 @@
     if ([segue.identifier isEqualToString:@"segueDetailRecipe"]) {
         
         NSIndexPath *indexPath = [_tableRecipe indexPathForSelectedRow];
-        [segue.destinationViewController setT1:recipes.name[indexPath.row]];
-        [segue.destinationViewController setT2:recipes.image[indexPath.row]];
-        [segue.destinationViewController setT3:recipes.ingridients[indexPath.row]];
-        [segue.destinationViewController setT4:recipes.textRecipe[indexPath.row]];
+        [segue.destinationViewController setCaption:recipes.name[indexPath.row]];
+        [segue.destinationViewController setNameImage:recipes.image[indexPath.row]];
+        [segue.destinationViewController setIngridients:recipes.ingridients[indexPath.row]];
+        [segue.destinationViewController setTextRecipe:recipes.textRecipe[indexPath.row]];
         
     }
     

@@ -13,14 +13,12 @@
 
 @interface DetailRecipeViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UILabel *l1;
-@property (weak, nonatomic) IBOutlet UILabel *l2;
-@property (weak, nonatomic) IBOutlet UILabel *l3;
-@property (weak, nonatomic) IBOutlet UILabel *l4;
-
-@property (nonatomic) NSString *t1;
-@property (nonatomic) NSString *t2;
-@property (nonatomic) NSString *t3;
-@property (nonatomic) NSString *t4;
+@property (nonatomic) NSString *caption;
+@property (nonatomic) NSString *nameImage;
+@property (nonatomic) NSString *ingridients;
+@property (nonatomic) NSString *textRecipe;
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (weak, nonatomic) IBOutlet UILabel *labelCaption;
+@property (weak, nonatomic) IBOutlet UIImageView *imageRecipe;
 
 @end

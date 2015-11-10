@@ -1,7 +1,7 @@
 { "recipes":
     {"breakfast" :
         [
-            {"name" : "ЯИШНИЦА", "image" : "1.jpg", "ingridients" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.", "recipe" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."},
+            {"name" : "БУТЕРБРОД", "image" : "1.jpg", "ingridients" : "Булочка - 3 шт. Филе сельди - 6 шт. Лук - 1 шт. Огурцы маринованые - 2 шт.", "recipe" : "1.  Мелко порубить лук. Огурцы нарезать тонкими ломтиками. 2.  Филе сельди нарезать на небольшие куски. 3.  Филе сельди положить на обе стороны булочки — верхнюю и нижнюю. Посыпать луком и накрыть огурцом."},
 
             {"name" : "САЛАТ С ОВОЩАМИ", "image" : "2.jpg", "ingridients" : "1. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.", "recipe" : "2. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."}
         ],

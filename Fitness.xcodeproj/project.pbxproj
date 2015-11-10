@@ -11,6 +11,10 @@
 		204EF2391BE1127B00F77F88 /* ClassPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 204EF2381BE1127B00F77F88 /* ClassPerson.m */; };
 		204EF23E1BE1129000F77F88 /* ClassMainMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 204EF23B1BE1129000F77F88 /* ClassMainMenu.m */; };
 		204EF23F1BE1129000F77F88 /* MainMenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 204EF23D1BE1129000F77F88 /* MainMenuTableViewController.m */; };
+		C359F86D1BF23FA900AD6E3A /* foot@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C359F86A1BF23FA900AD6E3A /* foot@2x.png */; };
+		C359F86E1BF23FA900AD6E3A /* icon_fire@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C359F86B1BF23FA900AD6E3A /* icon_fire@2x.png */; };
+		C359F86F1BF23FA900AD6E3A /* icon_water@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C359F86C1BF23FA900AD6E3A /* icon_water@2x.png */; };
+		C359F8721BF2408500AD6E3A /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C359F8711BF2408500AD6E3A /* StartViewController.m */; };
 		C3C5A8811BDF64B000D2BD1C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C5A8801BDF64B000D2BD1C /* main.m */; };
 		C3C5A8841BDF64B000D2BD1C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C5A8831BDF64B000D2BD1C /* AppDelegate.m */; };
 		C3C5A88A1BDF64B000D2BD1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3C5A8881BDF64B000D2BD1C /* Main.storyboard */; };
@@ -70,6 +74,11 @@
 		204EF23B1BE1129000F77F88 /* ClassMainMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassMainMenu.m; sourceTree = "<group>"; };
 		204EF23C1BE1129000F77F88 /* MainMenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuTableViewController.h; sourceTree = "<group>"; };
 		204EF23D1BE1129000F77F88 /* MainMenuTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuTableViewController.m; sourceTree = "<group>"; };
+		C359F86A1BF23FA900AD6E3A /* foot@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "foot@2x.png"; sourceTree = "<group>"; };
+		C359F86B1BF23FA900AD6E3A /* icon_fire@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_fire@2x.png"; sourceTree = "<group>"; };
+		C359F86C1BF23FA900AD6E3A /* icon_water@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_water@2x.png"; sourceTree = "<group>"; };
+		C359F8701BF2408500AD6E3A /* StartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartViewController.h; sourceTree = "<group>"; };
+		C359F8711BF2408500AD6E3A /* StartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartViewController.m; sourceTree = "<group>"; };
 		C3C5A87C1BDF64B000D2BD1C /* Fitness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fitness.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3C5A8801BDF64B000D2BD1C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C3C5A8821BDF64B000D2BD1C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -153,6 +162,18 @@
 			name = EditPersonalDefaults;
 			sourceTree = "<group>";
 		};
+		C359F8631BF23F2500AD6E3A /* StartView */ = {
+			isa = PBXGroup;
+			children = (
+				C359F86A1BF23FA900AD6E3A /* foot@2x.png */,
+				C359F86B1BF23FA900AD6E3A /* icon_fire@2x.png */,
+				C359F86C1BF23FA900AD6E3A /* icon_water@2x.png */,
+				C359F8701BF2408500AD6E3A /* StartViewController.h */,
+				C359F8711BF2408500AD6E3A /* StartViewController.m */,
+			);
+			name = StartView;
+			sourceTree = "<group>";
+		};
 		C3C5A8731BDF64B000D2BD1C = {
 			isa = PBXGroup;
 			children = (
@@ -176,6 +197,7 @@
 		C3C5A87E1BDF64B000D2BD1C /* Fitness */ = {
 			isa = PBXGroup;
 			children = (
+				C359F8631BF23F2500AD6E3A /* StartView */,
 				C3CF8ACA1BF0DADC00E3547F /* DetailRecipe */,
 				C3FE28C31BECDD2700B6D7EC /* Parcer */,
 				C3FE28B81BECCB7400B6D7EC /* Recipes */,
@@ -258,8 +280,8 @@
 			children = (
 				C3D164811BE79D900064ABA2 /* PersonalHistogramViewController.h */,
 				C3D164821BE79D900064ABA2 /* PersonalHistogramViewController.m */,
-				C3D164891BE7AEE90064ABA2 /* ClassHistogram.m */,
 				C3D1648A1BE7AEE90064ABA2 /* ClassHistogram.h */,
+				C3D164891BE7AEE90064ABA2 /* ClassHistogram.m */,
 			);
 			name = PersonalHistogram;
 			sourceTree = "<group>";
@@ -416,10 +438,12 @@
 			files = (
 				C3FE28A71BECBC1800B6D7EC /* breakfast@2x.png in Resources */,
 				C3FE28B61BECC41B00B6D7EC /* lanchHighlighted@2x.png in Resources */,
+				C359F86D1BF23FA900AD6E3A /* foot@2x.png in Resources */,
 				C3C5A88F1BDF64B000D2BD1C /* LaunchScreen.storyboard in Resources */,
 				C3FE28B51BECC41B00B6D7EC /* dinnerHighlighted@2x.png in Resources */,
 				C3D164881BE7AD380064ABA2 /* buttonGear@2x.png in Resources */,
 				C3C5A88C1BDF64B000D2BD1C /* Assets.xcassets in Resources */,
+				C359F86F1BF23FA900AD6E3A /* icon_water@2x.png in Resources */,
 				C3FE28B71BECC41B00B6D7EC /* secondBreakfastHighlighted@2x.png in Resources */,
 				C3FE28D21BECE26B00B6D7EC /* 4.jpg in Resources */,
 				C3FE28D11BECE26B00B6D7EC /* 3.jpg in Resources */,
@@ -432,6 +456,7 @@
 				C3FE28D31BECE26B00B6D7EC /* 5.png in Resources */,
 				C3FE28A41BECBC1800B6D7EC /* dinner@2x.png in Resources */,
 				C3FE28CF1BECE26B00B6D7EC /* 1.jpg in Resources */,
+				C359F86E1BF23FA900AD6E3A /* icon_fire@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,6 +494,7 @@
 				C3CF8ACD1BF0DB0200E3547F /* DetailRecipeViewController.m in Sources */,
 				C3FE289F1BECB90300B6D7EC /* MenuTableViewCell.m in Sources */,
 				C3C5A8811BDF64B000D2BD1C /* main.m in Sources */,
+				C359F8721BF2408500AD6E3A /* StartViewController.m in Sources */,
 				204EF23F1BE1129000F77F88 /* MainMenuTableViewController.m in Sources */,
 				C3D164831BE79D900064ABA2 /* PersonalHistogramViewController.m in Sources */,
 			);
