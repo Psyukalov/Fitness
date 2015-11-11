@@ -28,6 +28,10 @@
 		C3D164831BE79D900064ABA2 /* PersonalHistogramViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D164821BE79D900064ABA2 /* PersonalHistogramViewController.m */; };
 		C3D164881BE7AD380064ABA2 /* buttonGear@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3D164871BE7AD380064ABA2 /* buttonGear@2x.png */; };
 		C3D1648B1BE7AEE90064ABA2 /* ClassHistogram.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D164891BE7AEE90064ABA2 /* ClassHistogram.m */; };
+		C3D64A4D1BF3390100A26A65 /* afternoon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3D64A491BF3390100A26A65 /* afternoon@2x.png */; };
+		C3D64A4E1BF3390100A26A65 /* evening@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3D64A4A1BF3390100A26A65 /* evening@2x.png */; };
+		C3D64A4F1BF3390100A26A65 /* morning@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3D64A4B1BF3390100A26A65 /* morning@2x.png */; };
+		C3D64A501BF3390100A26A65 /* night@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3D64A4C1BF3390100A26A65 /* night@2x.png */; };
 		C3FE289C1BECB8CF00B6D7EC /* MenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FE289B1BECB8CF00B6D7EC /* MenuTableViewController.m */; };
 		C3FE289F1BECB90300B6D7EC /* MenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FE289E1BECB90300B6D7EC /* MenuTableViewCell.m */; };
 		C3FE28A41BECBC1800B6D7EC /* dinner@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3FE28A01BECBC1800B6D7EC /* dinner@2x.png */; };
@@ -104,6 +108,10 @@
 		C3D164871BE7AD380064ABA2 /* buttonGear@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "buttonGear@2x.png"; path = "../../../Desktop/buttonGear@2x.png"; sourceTree = "<group>"; };
 		C3D164891BE7AEE90064ABA2 /* ClassHistogram.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassHistogram.m; sourceTree = "<group>"; };
 		C3D1648A1BE7AEE90064ABA2 /* ClassHistogram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassHistogram.h; sourceTree = "<group>"; };
+		C3D64A491BF3390100A26A65 /* afternoon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "afternoon@2x.png"; sourceTree = "<group>"; };
+		C3D64A4A1BF3390100A26A65 /* evening@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "evening@2x.png"; sourceTree = "<group>"; };
+		C3D64A4B1BF3390100A26A65 /* morning@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "morning@2x.png"; sourceTree = "<group>"; };
+		C3D64A4C1BF3390100A26A65 /* night@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "night@2x.png"; sourceTree = "<group>"; };
 		C3FE289A1BECB8CF00B6D7EC /* MenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuTableViewController.h; sourceTree = "<group>"; };
 		C3FE289B1BECB8CF00B6D7EC /* MenuTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuTableViewController.m; sourceTree = "<group>"; };
 		C3FE289D1BECB90300B6D7EC /* MenuTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuTableViewCell.h; sourceTree = "<group>"; };
@@ -165,11 +173,15 @@
 		C359F8631BF23F2500AD6E3A /* StartView */ = {
 			isa = PBXGroup;
 			children = (
+				C359F8701BF2408500AD6E3A /* StartViewController.h */,
+				C359F8711BF2408500AD6E3A /* StartViewController.m */,
+				C3D64A491BF3390100A26A65 /* afternoon@2x.png */,
+				C3D64A4A1BF3390100A26A65 /* evening@2x.png */,
+				C3D64A4B1BF3390100A26A65 /* morning@2x.png */,
+				C3D64A4C1BF3390100A26A65 /* night@2x.png */,
 				C359F86A1BF23FA900AD6E3A /* foot@2x.png */,
 				C359F86B1BF23FA900AD6E3A /* icon_fire@2x.png */,
 				C359F86C1BF23FA900AD6E3A /* icon_water@2x.png */,
-				C359F8701BF2408500AD6E3A /* StartViewController.h */,
-				C359F8711BF2408500AD6E3A /* StartViewController.m */,
 			);
 			name = StartView;
 			sourceTree = "<group>";
@@ -440,7 +452,10 @@
 				C3FE28B61BECC41B00B6D7EC /* lanchHighlighted@2x.png in Resources */,
 				C359F86D1BF23FA900AD6E3A /* foot@2x.png in Resources */,
 				C3C5A88F1BDF64B000D2BD1C /* LaunchScreen.storyboard in Resources */,
+				C3D64A501BF3390100A26A65 /* night@2x.png in Resources */,
+				C3D64A4E1BF3390100A26A65 /* evening@2x.png in Resources */,
 				C3FE28B51BECC41B00B6D7EC /* dinnerHighlighted@2x.png in Resources */,
+				C3D64A4D1BF3390100A26A65 /* afternoon@2x.png in Resources */,
 				C3D164881BE7AD380064ABA2 /* buttonGear@2x.png in Resources */,
 				C3C5A88C1BDF64B000D2BD1C /* Assets.xcassets in Resources */,
 				C359F86F1BF23FA900AD6E3A /* icon_water@2x.png in Resources */,
@@ -455,6 +470,7 @@
 				C3FE28D01BECE26B00B6D7EC /* 2.jpg in Resources */,
 				C3FE28D31BECE26B00B6D7EC /* 5.png in Resources */,
 				C3FE28A41BECBC1800B6D7EC /* dinner@2x.png in Resources */,
+				C3D64A4F1BF3390100A26A65 /* morning@2x.png in Resources */,
 				C3FE28CF1BECE26B00B6D7EC /* 1.jpg in Resources */,
 				C359F86E1BF23FA900AD6E3A /* icon_fire@2x.png in Resources */,
 			);

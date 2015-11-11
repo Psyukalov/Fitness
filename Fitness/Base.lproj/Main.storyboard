@@ -752,35 +752,28 @@
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4pb-p1-3P6">
                                 <rect key="frame" x="20" y="40" width="374" height="676"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rvf-U2-y62">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="night.png" translatesAutoresizingMaskIntoConstraints="NO" id="Rvf-U2-y62">
                                         <rect key="frame" x="20" y="10" width="334" height="170"/>
                                         <animations/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ade-NG-r54">
                                         <rect key="frame" x="20" y="208" width="334" height="21"/>
                                         <animations/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                                         <color key="textColor" red="0.17254901959999999" green="0.24313725489999999" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ryV-t8-ToW">
                                         <rect key="frame" x="20" y="237" width="334" height="21"/>
                                         <animations/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                        <color key="textColor" red="0.17254901959999999" green="0.24313725489999999" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="76b-bY-3Fq">
-                                        <rect key="frame" x="20" y="322" width="334" height="21"/>
-                                        <animations/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
                                         <color key="textColor" red="0.17254901959999999" green="0.24313725489999999" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nJ0-yE-7lj">
-                                        <rect key="frame" x="20" y="375" width="334" height="21"/>
+                                        <rect key="frame" x="20" y="386" width="334" height="21"/>
                                         <animations/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <color key="textColor" red="0.17254901959999999" green="0.24313725489999999" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -838,6 +831,13 @@
                                             <segue destination="tnE-PK-4kQ" kind="show" id="kXR-s8-mMu"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="76b-bY-3Fq">
+                                        <rect key="frame" x="20" y="274" width="334" height="96"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" red="0.17254901959999999" green="0.24313725489999999" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -852,10 +852,11 @@
                         <outlet property="buttonSteps" destination="pDb-c0-ZNH" id="oyt-v7-jEZ"/>
                         <outlet property="buttonWater" destination="9HY-Li-BMG" id="ZYc-aH-vxq"/>
                         <outlet property="image" destination="Rvf-U2-y62" id="ihE-Pm-0Eo"/>
-                        <outlet property="label" destination="nJ0-yE-7lj" id="TPP-Ha-gew"/>
                         <outlet property="labelDate" destination="ryV-t8-ToW" id="wl1-Gd-etb"/>
-                        <outlet property="labelMeeting" destination="Ade-NG-r54" id="pv8-KQ-9je"/>
+                        <outlet property="labelMeet" destination="Ade-NG-r54" id="3Q7-iK-mqi"/>
+                        <outlet property="labelPostScriptum" destination="nJ0-yE-7lj" id="KJG-Km-b10"/>
                         <outlet property="labelTip" destination="76b-bY-3Fq" id="kZO-kA-g2v"/>
+                        <outlet property="secondView" destination="4pb-p1-3P6" id="szj-Eg-uXM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h8a-qG-PDd" sceneMemberID="firstResponder"/>
@@ -868,5 +869,6 @@
         <image name="foot.png" width="44" height="27"/>
         <image name="icon_fire.png" width="32" height="39"/>
         <image name="icon_water.png" width="29" height="38"/>
+        <image name="night.png" width="297" height="165"/>
     </resources>
 </document>

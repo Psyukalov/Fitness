@@ -23,15 +23,7 @@
     
     [super viewDidLoad];
     
-    _scrollView.layer.cornerRadius = 6;
-    _scrollView.layer.shadowColor = [[UIColor blackColor] CGColor];
-    _scrollView.layer.shadowRadius = 6;
-    _scrollView.layer.shadowOpacity = 0.5;
-    _scrollView.layer.shadowOffset = CGSizeMake(0, 8);
-    _scrollView.clipsToBounds = YES;    
-    
-    _labelCaption.text = caption;
-    _imageRecipe.image = [UIImage imageNamed:nameImage];
+    //
     
 }
 

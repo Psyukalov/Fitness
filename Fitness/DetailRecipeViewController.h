@@ -17,8 +17,5 @@
 @property (nonatomic) NSString *nameImage;
 @property (nonatomic) NSString *ingridients;
 @property (nonatomic) NSString *textRecipe;
-@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
-@property (weak, nonatomic) IBOutlet UILabel *labelCaption;
-@property (weak, nonatomic) IBOutlet UIImageView *imageRecipe;
 
 @end

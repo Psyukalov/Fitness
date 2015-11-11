@@ -186,7 +186,7 @@
     
     if (_growth == 0) {
         
-        _growth = 180;
+        _growth = 1.80;
         
     }
     

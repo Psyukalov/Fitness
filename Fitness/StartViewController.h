@@ -12,11 +12,12 @@
 
 @interface StartViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIView *secondView;
 @property (strong, nonatomic) IBOutlet UIImageView *image;
-@property (weak, nonatomic) IBOutlet UILabel *labelMeeting;
+@property (weak, nonatomic) IBOutlet UILabel *labelMeet;
 @property (weak, nonatomic) IBOutlet UILabel *labelDate;
 @property (weak, nonatomic) IBOutlet UILabel *labelTip;
-@property (weak, nonatomic) IBOutlet UILabel *label;
+@property (weak, nonatomic) IBOutlet UILabel *labelPostScriptum;
 @property (weak, nonatomic) IBOutlet UIButton *buttonCalories;
 @property (weak, nonatomic) IBOutlet UIButton *buttonWater;
 @property (weak, nonatomic) IBOutlet UIButton *buttonSteps;

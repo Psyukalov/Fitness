@@ -62,7 +62,7 @@
     _stepperChangeWeight.value = self.person.weight;
     
     _stepperChangeGrowth.minimumValue = 1;
-    _stepperChangeGrowth.maximumValue = 220;
+    _stepperChangeGrowth.maximumValue = 2.20;
     _stepperChangeGrowth.stepValue = 0.01;
     _stepperChangeGrowth.value = self.person.growth;
     
