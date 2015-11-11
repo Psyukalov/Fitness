@@ -26,15 +26,20 @@
     
     [super viewDidLoad];
     
-     self.navigationItem.title = @"ЛИЧНЫЙ КАБИНЕТ";
+    self.navigationItem.title = @"ЛИЧНЫЙ КАБИНЕТ";
+    UIBarButtonItem *barButtonBack = [[UIBarButtonItem alloc] init];
+    barButtonBack.title = @"";
+    self.navigationController.navigationBar.topItem.backBarButtonItem = barButtonBack;
     
     // Second view with black shadow
     
     _secondView.layer.cornerRadius = 6;
+    _secondView.clipsToBounds = YES;
     _secondView.layer.shadowColor = [[UIColor blackColor] CGColor];
     _secondView.layer.shadowRadius = 6;
     _secondView.layer.shadowOpacity = 0.5;
     _secondView.layer.shadowOffset = CGSizeMake(0, 8);
+    _secondView.layer.masksToBounds = NO;
     
     NSArray *vals = [NSArray arrayWithObjects:
                      [NSNumber numberWithInt:750],

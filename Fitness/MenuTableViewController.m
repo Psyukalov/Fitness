@@ -27,6 +27,11 @@
     
     [super viewDidLoad];
     
+    self.navigationItem.title = @"";
+    UIBarButtonItem *barButtonBack = [[UIBarButtonItem alloc] init];
+    barButtonBack.title = @"";
+    self.navigationController.navigationBar.topItem.backBarButtonItem = barButtonBack;
+    
     imagesArray = @[@"breakfast@2x.png",
                     @"secondBreakfast@2x.png",
                     @"lanch@2x.png",

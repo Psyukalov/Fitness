@@ -13,8 +13,6 @@
 @interface RecipeTableViewController () {
     
     ClassRecipe *recipes;
-//    NSArray *names;
-//    NSArray *images;
     
 }
 
@@ -33,6 +31,11 @@
 - (void)viewDidLoad {
 
     [super viewDidLoad];
+    
+    self.navigationItem.title = @"";
+    UIBarButtonItem *barButtonBack = [[UIBarButtonItem alloc] init];
+    barButtonBack.title = @"";
+    self.navigationController.navigationBar.topItem.backBarButtonItem = barButtonBack;
     
     NSString * recipeType;
     

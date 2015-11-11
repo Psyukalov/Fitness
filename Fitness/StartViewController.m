@@ -22,6 +22,8 @@
     
     //
     
+    self.navigationItem.title = @"NATALIA ZUBAREVA";
+    
     _secondView.layer.cornerRadius = 6;
     _secondView.clipsToBounds = YES;
     _secondView.layer.shadowColor = [[UIColor blackColor] CGColor];
@@ -29,7 +31,6 @@
     _secondView.layer.shadowOpacity = 0.5;
     _secondView.layer.shadowOffset = CGSizeMake(0, 8);
     _secondView.layer.masksToBounds = NO;
-    
     _buttonCalories.layer.cornerRadius = _buttonCalories.frame.size.height / 2;
     _buttonCalories.clipsToBounds = YES;
     

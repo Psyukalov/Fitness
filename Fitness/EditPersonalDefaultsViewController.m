@@ -40,17 +40,17 @@
     listGender = @[@"Мужской", @"Женский"];
     
     _secondView.layer.cornerRadius = 6;
+    _secondView.clipsToBounds = YES;
     _secondView.layer.shadowColor = [[UIColor blackColor] CGColor];
     _secondView.layer.shadowRadius = 6;
     _secondView.layer.shadowOpacity = 0.5;
     _secondView.layer.shadowOffset = CGSizeMake(0, 8);
+    _secondView.layer.masksToBounds = NO;
+    
     
     _buttonAgreeDefaults.layer.cornerRadius = 15;
     
     _editName.text = self.person.name;
-    
-    _editName.layer.cornerRadius = 10;
-    _editName.layer.masksToBounds = YES;
     
     _labelWeight.text = [NSString stringWithFormat:@"Вес %1.1f кг", self.person.weight];
 

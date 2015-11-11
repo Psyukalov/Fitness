@@ -23,7 +23,10 @@
     
     [super viewDidLoad];
     
-    //
+    self.navigationItem.title = @"";
+    UIBarButtonItem *barButtonBack = [[UIBarButtonItem alloc] init];
+    barButtonBack.title = @"";
+    self.navigationController.navigationBar.topItem.backBarButtonItem = barButtonBack;
     
 }
 

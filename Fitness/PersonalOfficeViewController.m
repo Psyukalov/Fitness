@@ -26,21 +26,26 @@
 - (void)viewDidLoad {
 
     [super viewDidLoad];
+    
+    self.navigationItem.title = @"НАСТРОЙКИ";
+    UIBarButtonItem *barButtonBack = [[UIBarButtonItem alloc] init];
+    barButtonBack.title = @"";
+    self.navigationController.navigationBar.topItem.backBarButtonItem = barButtonBack;
 
     person = [[ClassPerson alloc] init];
     
     [person load];
     [person loadAvatar];
     
-    self.navigationItem.title = @"НАСТРОЙКИ";
-    
     // Second view with black shadow
     
     _secondView.layer.cornerRadius = 6;
+    _secondView.clipsToBounds = YES;
     _secondView.layer.shadowColor = [[UIColor blackColor] CGColor];
     _secondView.layer.shadowRadius = 6;
     _secondView.layer.shadowOpacity = 0.5;
     _secondView.layer.shadowOffset = CGSizeMake(0, 8);
+    _secondView.layer.masksToBounds = NO;
     
     // First avatar with black layer
 
