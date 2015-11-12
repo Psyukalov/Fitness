@@ -11,12 +11,15 @@
 		204EF2391BE1127B00F77F88 /* ClassPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 204EF2381BE1127B00F77F88 /* ClassPerson.m */; };
 		204EF23E1BE1129000F77F88 /* ClassMainMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 204EF23B1BE1129000F77F88 /* ClassMainMenu.m */; };
 		204EF23F1BE1129000F77F88 /* MainMenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 204EF23D1BE1129000F77F88 /* MainMenuTableViewController.m */; };
+		C31CB7041BF49D2100E073A9 /* addGlass@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C31CB7011BF49D2100E073A9 /* addGlass@2x.png */; };
+		C31CB7051BF49D2100E073A9 /* emptyGlass@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C31CB7021BF49D2100E073A9 /* emptyGlass@2x.png */; };
+		C31CB7061BF49D2100E073A9 /* fullGlass@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C31CB7031BF49D2100E073A9 /* fullGlass@2x.png */; };
+		C31CB7081BF4B04800E073A9 /* chek@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C31CB7071BF4B04700E073A9 /* chek@2x.png */; };
 		C359F86D1BF23FA900AD6E3A /* foot@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C359F86A1BF23FA900AD6E3A /* foot@2x.png */; };
 		C359F86E1BF23FA900AD6E3A /* icon_fire@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C359F86B1BF23FA900AD6E3A /* icon_fire@2x.png */; };
 		C359F86F1BF23FA900AD6E3A /* icon_water@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C359F86C1BF23FA900AD6E3A /* icon_water@2x.png */; };
 		C359F8721BF2408500AD6E3A /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C359F8711BF2408500AD6E3A /* StartViewController.m */; };
 		C37CFC321BF35A480054F8D3 /* WaterManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C37CFC311BF35A480054F8D3 /* WaterManagerViewController.m */; };
-		C37CFC371BF3784B0054F8D3 /* ClassWaterButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C37CFC361BF3784B0054F8D3 /* ClassWaterButton.m */; };
 		C3C5A8811BDF64B000D2BD1C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C5A8801BDF64B000D2BD1C /* main.m */; };
 		C3C5A8841BDF64B000D2BD1C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C5A8831BDF64B000D2BD1C /* AppDelegate.m */; };
 		C3C5A88A1BDF64B000D2BD1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3C5A8881BDF64B000D2BD1C /* Main.storyboard */; };
@@ -80,6 +83,10 @@
 		204EF23B1BE1129000F77F88 /* ClassMainMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassMainMenu.m; sourceTree = "<group>"; };
 		204EF23C1BE1129000F77F88 /* MainMenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuTableViewController.h; sourceTree = "<group>"; };
 		204EF23D1BE1129000F77F88 /* MainMenuTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuTableViewController.m; sourceTree = "<group>"; };
+		C31CB7011BF49D2100E073A9 /* addGlass@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "addGlass@2x.png"; sourceTree = "<group>"; };
+		C31CB7021BF49D2100E073A9 /* emptyGlass@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "emptyGlass@2x.png"; sourceTree = "<group>"; };
+		C31CB7031BF49D2100E073A9 /* fullGlass@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fullGlass@2x.png"; sourceTree = "<group>"; };
+		C31CB7071BF4B04700E073A9 /* chek@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chek@2x.png"; sourceTree = "<group>"; };
 		C359F86A1BF23FA900AD6E3A /* foot@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "foot@2x.png"; sourceTree = "<group>"; };
 		C359F86B1BF23FA900AD6E3A /* icon_fire@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_fire@2x.png"; sourceTree = "<group>"; };
 		C359F86C1BF23FA900AD6E3A /* icon_water@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_water@2x.png"; sourceTree = "<group>"; };
@@ -87,8 +94,6 @@
 		C359F8711BF2408500AD6E3A /* StartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartViewController.m; sourceTree = "<group>"; };
 		C37CFC301BF35A480054F8D3 /* WaterManagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaterManagerViewController.h; sourceTree = "<group>"; };
 		C37CFC311BF35A480054F8D3 /* WaterManagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaterManagerViewController.m; sourceTree = "<group>"; };
-		C37CFC351BF3784B0054F8D3 /* ClassWaterButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassWaterButton.h; sourceTree = "<group>"; };
-		C37CFC361BF3784B0054F8D3 /* ClassWaterButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassWaterButton.m; sourceTree = "<group>"; };
 		C3C5A87C1BDF64B000D2BD1C /* Fitness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fitness.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3C5A8801BDF64B000D2BD1C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C3C5A8821BDF64B000D2BD1C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -198,8 +203,10 @@
 			children = (
 				C37CFC301BF35A480054F8D3 /* WaterManagerViewController.h */,
 				C37CFC311BF35A480054F8D3 /* WaterManagerViewController.m */,
-				C37CFC351BF3784B0054F8D3 /* ClassWaterButton.h */,
-				C37CFC361BF3784B0054F8D3 /* ClassWaterButton.m */,
+				C31CB7071BF4B04700E073A9 /* chek@2x.png */,
+				C31CB7011BF49D2100E073A9 /* addGlass@2x.png */,
+				C31CB7021BF49D2100E073A9 /* emptyGlass@2x.png */,
+				C31CB7031BF49D2100E073A9 /* fullGlass@2x.png */,
 			);
 			name = WaterManager;
 			sourceTree = "<group>";
@@ -468,6 +475,8 @@
 			files = (
 				C3FE28A71BECBC1800B6D7EC /* breakfast@2x.png in Resources */,
 				C3FE28B61BECC41B00B6D7EC /* lanchHighlighted@2x.png in Resources */,
+				C31CB7061BF49D2100E073A9 /* fullGlass@2x.png in Resources */,
+				C31CB7081BF4B04800E073A9 /* chek@2x.png in Resources */,
 				C359F86D1BF23FA900AD6E3A /* foot@2x.png in Resources */,
 				C3C5A88F1BDF64B000D2BD1C /* LaunchScreen.storyboard in Resources */,
 				C3D64A501BF3390100A26A65 /* night@2x.png in Resources */,
@@ -481,8 +490,10 @@
 				C3FE28D21BECE26B00B6D7EC /* 4.jpg in Resources */,
 				C3FE28D11BECE26B00B6D7EC /* 3.jpg in Resources */,
 				C3FE28C21BECDAA200B6D7EC /* Recipes.json in Resources */,
+				C31CB7041BF49D2100E073A9 /* addGlass@2x.png in Resources */,
 				C3FE28B41BECC41B00B6D7EC /* breakfastHighlighted@2x.png in Resources */,
 				C3FE28A51BECBC1800B6D7EC /* lanch@2x.png in Resources */,
+				C31CB7051BF49D2100E073A9 /* emptyGlass@2x.png in Resources */,
 				C3FE28A61BECBC1800B6D7EC /* secondBreakfast@2x.png in Resources */,
 				C3C5A88A1BDF64B000D2BD1C /* Main.storyboard in Resources */,
 				C3FE28D01BECE26B00B6D7EC /* 2.jpg in Resources */,
@@ -517,7 +528,6 @@
 			files = (
 				C3C5A8841BDF64B000D2BD1C /* AppDelegate.m in Sources */,
 				C3D1648B1BE7AEE90064ABA2 /* ClassHistogram.m in Sources */,
-				C37CFC371BF3784B0054F8D3 /* ClassWaterButton.m in Sources */,
 				203896F31BE2142300160F66 /* EditPersonalDefaultsViewController.m in Sources */,
 				204EF23E1BE1129000F77F88 /* ClassMainMenu.m in Sources */,
 				C3FE28C91BECDD9700B6D7EC /* ClassParserJSON.m in Sources */,

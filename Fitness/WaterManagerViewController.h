@@ -8,15 +8,19 @@
 
 
 #import <UIKit/UIKit.h>
-#import "ClassWaterButton.h"
+
 
 @interface WaterManagerViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UIView *secondView;
-@property (weak, nonatomic) IBOutlet ClassWaterButton *b1;
-@property (weak, nonatomic) IBOutlet ClassWaterButton *b2;
-@property (weak, nonatomic) IBOutlet ClassWaterButton *b3;
-
-- (void)log;
+@property (weak, nonatomic) IBOutlet UILabel *labelDay;
+@property (weak, nonatomic) IBOutlet UILabel *labelMonth;
+@property (weak, nonatomic) IBOutlet UILabel *labelWater;
+@property (weak, nonatomic) IBOutlet UILabel *labelTip;
+@property (weak, nonatomic) IBOutlet UIButton *buttonOK;
+- (void)drawResult;
+- (void)drawGlass;
+- (IBAction)buttonAddGlass:(id)sender;
+- (IBAction)buttonOK:(id)sender;
 
 @end

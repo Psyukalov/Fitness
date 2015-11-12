@@ -690,7 +690,6 @@
         <!--Detail Recipe View Controller-->
         <scene sceneID="eaM-aC-4oE">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fSn-gE-52f" sceneMemberID="firstResponder"/>
                 <viewController id="4EI-wi-Fcd" customClass="DetailRecipeViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ep9-AE-cwR"/>
@@ -703,6 +702,7 @@
                         <color key="backgroundColor" red="0.17254901959999999" green="0.24313725489999999" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fSn-gE-52f" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1791" y="527"/>
         </scene>
@@ -872,26 +872,29 @@
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gcH-mD-gLq" customClass="ClassWaterButton">
-                                        <rect key="frame" x="138" y="203" width="98" height="101"/>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eDp-Mj-N9y">
+                                        <rect key="frame" x="0.0" y="196" width="374" height="154"/>
                                         <animations/>
-                                        <color key="backgroundColor" red="0.17254901959999999" green="0.24313725489999999" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <state key="normal" title="0"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="72"/>
+                                        <connections>
+                                            <action selector="buttonAddGlass:" destination="ZQe-e1-FNL" eventType="touchUpInside" id="5Qh-2I-ITK"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ETf-LS-vTG" customClass="ClassWaterButton">
-                                        <rect key="frame" x="244" y="203" width="98" height="101"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hIp-ca-8fg">
+                                        <rect key="frame" x="8" y="370" width="358" height="42"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                                        <color key="textColor" red="0.17254901959999999" green="0.24313725489999999" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="26b-eJ-zw2">
+                                        <rect key="frame" x="157" y="506" width="60" height="60"/>
                                         <animations/>
                                         <color key="backgroundColor" red="0.17254901959999999" green="0.24313725489999999" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <state key="normal" title="0"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YZK-6w-rfc" customClass="ClassWaterButton">
-                                        <rect key="frame" x="32" y="203" width="98" height="101"/>
-                                        <animations/>
-                                        <color key="backgroundColor" red="0.17254901959999999" green="0.24313725489999999" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <state key="normal" title="0"/>
+                                        <state key="normal" image="chek.png"/>
+                                        <connections>
+                                            <action selector="buttonOK:" destination="ZQe-e1-FNL" eventType="touchUpInside" id="pnD-fj-54f"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <animations/>
@@ -903,9 +906,11 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
-                        <outlet property="b1" destination="YZK-6w-rfc" id="5mP-P8-T5S"/>
-                        <outlet property="b2" destination="gcH-mD-gLq" id="DWF-4v-RbJ"/>
-                        <outlet property="b3" destination="ETf-LS-vTG" id="M5G-Ee-8hq"/>
+                        <outlet property="buttonOK" destination="26b-eJ-zw2" id="ldb-Ed-aXf"/>
+                        <outlet property="labelDay" destination="gMr-XJ-VMF" id="6Mf-qX-5Cl"/>
+                        <outlet property="labelMonth" destination="KO3-6p-F9m" id="hX9-zQ-ett"/>
+                        <outlet property="labelTip" destination="hIp-ca-8fg" id="69d-LW-9Q8"/>
+                        <outlet property="labelWater" destination="bOq-JM-gFI" id="8hc-h0-eMR"/>
                         <outlet property="secondView" destination="MBa-1F-dFg" id="e2e-Aa-8Bv"/>
                     </connections>
                 </viewController>
@@ -939,6 +944,7 @@
     </scenes>
     <resources>
         <image name="buttonGear.png" width="29" height="29"/>
+        <image name="chek.png" width="39" height="28"/>
         <image name="foot.png" width="44" height="27"/>
         <image name="icon_fire.png" width="32" height="39"/>
         <image name="icon_water.png" width="29" height="38"/>
