@@ -13,6 +13,8 @@
 @interface ClassParserJSON : NSObject
 
 + (NSMutableArray *)createArrayWithValueKeyPath:(NSString *)keyPath
-                                    andValueKey:(NSString *)key;
+                                    andValueKey:(NSString *)key
+                                       fromFile:(NSString *)file
+                                         ofType:(NSString *)type;
 
 @end

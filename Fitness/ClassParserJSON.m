@@ -13,10 +13,12 @@
 @implementation ClassParserJSON
 
 + (NSMutableArray *)createArrayWithValueKeyPath:(NSString *)keyPath
-                                    andValueKey:(NSString *)key {
+                                    andValueKey:(NSString *)key
+                                       fromFile:(NSString *)file
+                                         ofType:(NSString *)type {
     
     NSBundle *bundle = [NSBundle mainBundle];
-    NSString *pathJSON = [bundle pathForResource:@"Recipes" ofType:@"json"];
+    NSString *pathJSON = [bundle pathForResource:file ofType:type];
     NSData *dataJSON = [NSData dataWithContentsOfFile:pathJSON];
     
     NSError *parseError;

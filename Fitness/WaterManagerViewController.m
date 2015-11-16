@@ -209,7 +209,8 @@
 - (IBAction)buttonOK:(id)sender {
     
     [useGlass setInteger:(long)countGlass forKey:@"countGlass"];
-    [self.navigationController popToRootViewControllerAnimated:YES];
+    [useGlass setObject:[NSDate date] forKey:@"lastTime"];
+    [self.navigationController popViewControllerAnimated:YES];
     
 }
 

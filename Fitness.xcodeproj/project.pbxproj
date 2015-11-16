@@ -11,6 +11,10 @@
 		204EF2391BE1127B00F77F88 /* ClassPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 204EF2381BE1127B00F77F88 /* ClassPerson.m */; };
 		204EF23E1BE1129000F77F88 /* ClassMainMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 204EF23B1BE1129000F77F88 /* ClassMainMenu.m */; };
 		204EF23F1BE1129000F77F88 /* MainMenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 204EF23D1BE1129000F77F88 /* MainMenuTableViewController.m */; };
+		C30EA2521BF9DEE500DD4EAA /* TipsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C30EA2511BF9DEE500DD4EAA /* TipsViewController.m */; };
+		C30EA2541BF9E33E00DD4EAA /* Tips.json in Resources */ = {isa = PBXBuildFile; fileRef = C30EA2531BF9E33E00DD4EAA /* Tips.json */; };
+		C30EA2571BF9E8DF00DD4EAA /* image_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C30EA2551BF9E8DF00DD4EAA /* image_2.jpg */; };
+		C30EA2581BF9E8DF00DD4EAA /* image_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C30EA2561BF9E8DF00DD4EAA /* image_1.jpg */; };
 		C31CB7041BF49D2100E073A9 /* addGlass@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C31CB7011BF49D2100E073A9 /* addGlass@2x.png */; };
 		C31CB7051BF49D2100E073A9 /* emptyGlass@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C31CB7021BF49D2100E073A9 /* emptyGlass@2x.png */; };
 		C31CB7061BF49D2100E073A9 /* fullGlass@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C31CB7031BF49D2100E073A9 /* fullGlass@2x.png */; };
@@ -83,6 +87,11 @@
 		204EF23B1BE1129000F77F88 /* ClassMainMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassMainMenu.m; sourceTree = "<group>"; };
 		204EF23C1BE1129000F77F88 /* MainMenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuTableViewController.h; sourceTree = "<group>"; };
 		204EF23D1BE1129000F77F88 /* MainMenuTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuTableViewController.m; sourceTree = "<group>"; };
+		C30EA2501BF9DEE500DD4EAA /* TipsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TipsViewController.h; sourceTree = "<group>"; };
+		C30EA2511BF9DEE500DD4EAA /* TipsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TipsViewController.m; sourceTree = "<group>"; };
+		C30EA2531BF9E33E00DD4EAA /* Tips.json */ = {isa = PBXFileReference; explicitFileType = text.json; fileEncoding = 4; path = Tips.json; sourceTree = "<group>"; };
+		C30EA2551BF9E8DF00DD4EAA /* image_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_2.jpg; sourceTree = "<group>"; };
+		C30EA2561BF9E8DF00DD4EAA /* image_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_1.jpg; sourceTree = "<group>"; };
 		C31CB7011BF49D2100E073A9 /* addGlass@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "addGlass@2x.png"; sourceTree = "<group>"; };
 		C31CB7021BF49D2100E073A9 /* emptyGlass@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "emptyGlass@2x.png"; sourceTree = "<group>"; };
 		C31CB7031BF49D2100E073A9 /* fullGlass@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fullGlass@2x.png"; sourceTree = "<group>"; };
@@ -181,6 +190,18 @@
 			name = EditPersonalDefaults;
 			sourceTree = "<group>";
 		};
+		C30EA24F1BF9DD4700DD4EAA /* Tips */ = {
+			isa = PBXGroup;
+			children = (
+				C30EA2501BF9DEE500DD4EAA /* TipsViewController.h */,
+				C30EA2511BF9DEE500DD4EAA /* TipsViewController.m */,
+				C30EA2561BF9E8DF00DD4EAA /* image_1.jpg */,
+				C30EA2551BF9E8DF00DD4EAA /* image_2.jpg */,
+				C30EA2531BF9E33E00DD4EAA /* Tips.json */,
+			);
+			name = Tips;
+			sourceTree = "<group>";
+		};
 		C359F8631BF23F2500AD6E3A /* StartView */ = {
 			isa = PBXGroup;
 			children = (
@@ -234,6 +255,7 @@
 		C3C5A87E1BDF64B000D2BD1C /* Fitness */ = {
 			isa = PBXGroup;
 			children = (
+				C30EA24F1BF9DD4700DD4EAA /* Tips */,
 				C3FE28C31BECDD2700B6D7EC /* Parcer */,
 				C359F8631BF23F2500AD6E3A /* StartView */,
 				C3FE28991BECB8AE00B6D7EC /* Menu */,
@@ -481,11 +503,13 @@
 				C3C5A88F1BDF64B000D2BD1C /* LaunchScreen.storyboard in Resources */,
 				C3D64A501BF3390100A26A65 /* night@2x.png in Resources */,
 				C3D64A4E1BF3390100A26A65 /* evening@2x.png in Resources */,
+				C30EA2571BF9E8DF00DD4EAA /* image_2.jpg in Resources */,
 				C3FE28B51BECC41B00B6D7EC /* dinnerHighlighted@2x.png in Resources */,
 				C3D64A4D1BF3390100A26A65 /* afternoon@2x.png in Resources */,
 				C3D164881BE7AD380064ABA2 /* buttonGear@2x.png in Resources */,
 				C3C5A88C1BDF64B000D2BD1C /* Assets.xcassets in Resources */,
 				C359F86F1BF23FA900AD6E3A /* icon_water@2x.png in Resources */,
+				C30EA2581BF9E8DF00DD4EAA /* image_1.jpg in Resources */,
 				C3FE28B71BECC41B00B6D7EC /* secondBreakfastHighlighted@2x.png in Resources */,
 				C3FE28D21BECE26B00B6D7EC /* 4.jpg in Resources */,
 				C3FE28D11BECE26B00B6D7EC /* 3.jpg in Resources */,
@@ -493,6 +517,7 @@
 				C31CB7041BF49D2100E073A9 /* addGlass@2x.png in Resources */,
 				C3FE28B41BECC41B00B6D7EC /* breakfastHighlighted@2x.png in Resources */,
 				C3FE28A51BECBC1800B6D7EC /* lanch@2x.png in Resources */,
+				C30EA2541BF9E33E00DD4EAA /* Tips.json in Resources */,
 				C31CB7051BF49D2100E073A9 /* emptyGlass@2x.png in Resources */,
 				C3FE28A61BECBC1800B6D7EC /* secondBreakfast@2x.png in Resources */,
 				C3C5A88A1BDF64B000D2BD1C /* Main.storyboard in Resources */,
@@ -532,6 +557,7 @@
 				204EF23E1BE1129000F77F88 /* ClassMainMenu.m in Sources */,
 				C3FE28C91BECDD9700B6D7EC /* ClassParserJSON.m in Sources */,
 				C3FE28BE1BECCDB500B6D7EC /* RecipeTableViewController.m in Sources */,
+				C30EA2521BF9DEE500DD4EAA /* TipsViewController.m in Sources */,
 				C3FE289C1BECB8CF00B6D7EC /* MenuTableViewController.m in Sources */,
 				C37CFC321BF35A480054F8D3 /* WaterManagerViewController.m in Sources */,
 				204EF2391BE1127B00F77F88 /* ClassPerson.m in Sources */,

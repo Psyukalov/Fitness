@@ -60,13 +60,10 @@
     
     recipes = [[ClassRecipe alloc] init];
     
-    recipes.name = [ClassParserJSON createArrayWithValueKeyPath:request andValueKey:@"name"];
-    recipes.image = [ClassParserJSON createArrayWithValueKeyPath:request andValueKey:@"image"];
-    recipes.ingridients = [ClassParserJSON createArrayWithValueKeyPath:request andValueKey:@"ingridients"];
-    recipes.textRecipe = [ClassParserJSON createArrayWithValueKeyPath:request andValueKey:@"recipe"];
-    
-//    names = [ClassParserJSON createArrayWithValueKeyPath:request andValueKey:@"name"];
-//    images = [ClassParserJSON createArrayWithValueKeyPath:request andValueKey:@"image"];
+    recipes.name = [ClassParserJSON createArrayWithValueKeyPath:request andValueKey:@"name" fromFile:@"Recipes" ofType:@"json"];
+    recipes.image = [ClassParserJSON createArrayWithValueKeyPath:request andValueKey:@"image" fromFile:@"Recipes" ofType:@"json"];
+    recipes.ingridients = [ClassParserJSON createArrayWithValueKeyPath:request andValueKey:@"ingridients" fromFile:@"Recipes" ofType:@"json"];
+    recipes.textRecipe = [ClassParserJSON createArrayWithValueKeyPath:request andValueKey:@"recipe" fromFile:@"Recipes" ofType:@"json"];
     
 }
 
