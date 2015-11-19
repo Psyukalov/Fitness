@@ -74,12 +74,12 @@
     
     person = [[ClassPerson alloc] init];
     
-    [person load];
-    [person loadAvatar];
+//    [person load];
+//    [person loadAvatar];
     
     // First avatar with black layer
     
-    _imageFirstAvatar.image = [UIImage imageWithData:person.avatar];
+//    _imageFirstAvatar.image = [UIImage imageWithData:person.avatar];
     _imageFirstAvatar.layer.cornerRadius = 6;
     _imageFirstAvatar.clipsToBounds = YES;
     CALayer *secondAvatarLayer = [CALayer layer];
@@ -91,20 +91,33 @@
     
     // Second avatar
     
-    _imageSecondAvatar.image = [UIImage imageWithData:person.avatar];
+//    _imageSecondAvatar.image = [UIImage imageWithData:person.avatar];
     _imageSecondAvatar.layer.cornerRadius = 46;
     _imageSecondAvatar.clipsToBounds = YES;
     
     // Name
     
-    _labelName.text = person.name;
+//    _labelName.text = person.name;
     
     // Start date
     
     formatter = [[NSDateFormatter alloc] init];
     [formatter setDateFormat:@"dd.MM.yyyy"];
+//    NSString *startDate = [formatter stringFromDate:person.startDate];
+//    _labelStartDate.text = [NSString stringWithFormat:@"мы вместе с %@", startDate];
+    
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    
+    [person load];
+    [person loadAvatar];
+    _imageFirstAvatar.image = [UIImage imageWithData:person.avatar];
+    _imageSecondAvatar.image = [UIImage imageWithData:person.avatar];
+    _labelName.text = person.name;
     NSString *startDate = [formatter stringFromDate:person.startDate];
     _labelStartDate.text = [NSString stringWithFormat:@"мы вместе с %@", startDate];
+    
     
 }
 

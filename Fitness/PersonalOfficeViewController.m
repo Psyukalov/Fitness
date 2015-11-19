@@ -74,14 +74,6 @@
     formatter = [[NSDateFormatter alloc] init];
     [formatter setDateFormat:@"dd.MM.yyyy"];
     startDate = [formatter stringFromDate:person.startDate];
-//    _labelStartDate.text = [NSString stringWithFormat:@"мы вместе с %@", startDate];
-    
-    // Bio
-    
-//    _labelWeight.text = [NSString stringWithFormat:@"%1.1f кг", person.weight];
-//    _labelGrowth.text = [NSString stringWithFormat:@"%1.2f м", person.growth];
-//    _labelBirthday.text = [formatter stringFromDate:person.birthday];
-//    _labelGender.text = person.gender;
     
     // Change avatar
     

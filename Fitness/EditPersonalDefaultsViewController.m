@@ -50,24 +50,34 @@
     
     _buttonAgreeDefaults.layer.cornerRadius = 15;
     
-    _editName.text = self.person.name;
+    _editName.text = _person.name;
     
-    _labelWeight.text = [NSString stringWithFormat:@"Вес %1.1f кг", self.person.weight];
+    _labelWeight.text = [NSString stringWithFormat:@"Вес %1.1f кг", _person.weight];
 
-    _labelGrowth.text = [NSString stringWithFormat:@"Рост %1.2f м", self.person.growth];
+    _labelGrowth.text = [NSString stringWithFormat:@"Рост %1.2f м", _person.growth];
     
     _stepperChangeWeight.minimumValue = 10;
     _stepperChangeWeight.maximumValue = 250;
     _stepperChangeWeight.stepValue = 0.1;
-    _stepperChangeWeight.value = self.person.weight;
+    _stepperChangeWeight.value = _person.weight;
     
     _stepperChangeGrowth.minimumValue = 1;
     _stepperChangeGrowth.maximumValue = 2.20;
     _stepperChangeGrowth.stepValue = 0.01;
-    _stepperChangeGrowth.value = self.person.growth;
+    _stepperChangeGrowth.value = _person.growth;
     
     _dataPickerBirthday.maximumDate = [NSDate date];
-    _dataPickerBirthday.date = self.person.birthday;
+    _dataPickerBirthday.date = _person.birthday;
+    
+    if ([_person.gender isEqualToString:@"Мужской"]) {
+        
+        [_pickerGender selectRow:0 inComponent:0 animated:YES];
+        
+    } else {
+        
+        [_pickerGender selectRow:1 inComponent:0 animated:YES];
+        
+    }
     
 }
 
@@ -91,26 +101,26 @@
 
 - (IBAction)stepperChangeWeight:(id)sender {
     
-    self.person.weight = _stepperChangeWeight.value;
-    _labelWeight.text = [NSString stringWithFormat:@"Вес %1.1f кг", self.person.weight];
+    _person.weight = _stepperChangeWeight.value;
+    _labelWeight.text = [NSString stringWithFormat:@"Вес %1.1f кг", _person.weight];
 
 }
 
 - (IBAction)stepperChangeGrowth:(id)sender {
 
-    self.person.growth = _stepperChangeGrowth.value;
-    _labelGrowth.text = [NSString stringWithFormat:@"Рост %1.2f м", self.person.growth];
+    _person.growth = _stepperChangeGrowth.value;
+    _labelGrowth.text = [NSString stringWithFormat:@"Рост %1.2f м", _person.growth];
     
 }
 
 - (IBAction)buttonAgreeDefaults:(id)sender {
 
-    self.person.name = _editName.text;
-    [self.person setStartDate];
-    self.person.birthday = _dataPickerBirthday.date;
-    self.person.gender = listGender[[_pickerGender selectedRowInComponent:0]];
+    _person.name = _editName.text;
+    [_person setStartDate];
+    _person.birthday = _dataPickerBirthday.date;
+    _person.gender = listGender[[_pickerGender selectedRowInComponent:0]];
     
-    [self.person save];
+    [_person save];
     
     [self dismissViewControllerAnimated:YES completion:nil];
     

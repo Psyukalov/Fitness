@@ -232,6 +232,13 @@
 			name = WaterManager;
 			sourceTree = "<group>";
 		};
+		C397EE491BFE075A007FD01D /* Preview */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Preview;
+			sourceTree = "<group>";
+		};
 		C3C5A8731BDF64B000D2BD1C = {
 			isa = PBXGroup;
 			children = (
@@ -255,6 +262,7 @@
 		C3C5A87E1BDF64B000D2BD1C /* Fitness */ = {
 			isa = PBXGroup;
 			children = (
+				C397EE491BFE075A007FD01D /* Preview */,
 				C30EA24F1BF9DD4700DD4EAA /* Tips */,
 				C3FE28C31BECDD2700B6D7EC /* Parcer */,
 				C359F8631BF23F2500AD6E3A /* StartView */,

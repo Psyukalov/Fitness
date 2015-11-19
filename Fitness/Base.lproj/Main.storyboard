@@ -1014,6 +1014,50 @@
             </objects>
             <point key="canvasLocation" x="841" y="527"/>
         </scene>
+        <!--Tips View Controller-->
+        <scene sceneID="SDt-qn-WiX">
+            <objects>
+                <viewController id="XBt-f3-7aA" customClass="TipsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fJQ-fR-xDp"/>
+                        <viewControllerLayoutGuide type="bottom" id="rlc-dv-JEb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="r5c-sW-Lss">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="puC-vm-z1N">
+                                <rect key="frame" x="20" y="20" width="374" height="254"/>
+                                <animations/>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.17254901959999999" green="0.24313725489999999" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="5yP-0v-BJF" appends="YES" id="9vV-EG-FMb"/>
+                            <outletCollection property="gestureRecognizers" destination="pzX-eN-MFD" appends="YES" id="2tb-XQ-vTE"/>
+                        </connections>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="imageTip" destination="puC-vm-z1N" id="ddI-i1-3hW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="czB-Kk-bsh" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="5yP-0v-BJF">
+                    <connections>
+                        <action selector="nextTip:" destination="XBt-f3-7aA" id="wrJ-V2-Io1"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="pzX-eN-MFD">
+                    <connections>
+                        <action selector="previosTip:" destination="XBt-f3-7aA" id="ujC-dr-qQ6"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="836" y="1404"/>
+        </scene>
     </scenes>
     <resources>
         <image name="buttonGear.png" width="29" height="29"/>
