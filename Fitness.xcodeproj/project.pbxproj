@@ -24,6 +24,10 @@
 		C359F86F1BF23FA900AD6E3A /* icon_water@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C359F86C1BF23FA900AD6E3A /* icon_water@2x.png */; };
 		C359F8721BF2408500AD6E3A /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C359F8711BF2408500AD6E3A /* StartViewController.m */; };
 		C37CFC321BF35A480054F8D3 /* WaterManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C37CFC311BF35A480054F8D3 /* WaterManagerViewController.m */; };
+		C397EE4C1BFE0C4A007FD01D /* PreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C397EE4B1BFE0C4A007FD01D /* PreviewViewController.m */; };
+		C397EE501BFE10C7007FD01D /* pr1.png in Resources */ = {isa = PBXBuildFile; fileRef = C397EE4D1BFE10C7007FD01D /* pr1.png */; };
+		C397EE511BFE10C7007FD01D /* pr2.png in Resources */ = {isa = PBXBuildFile; fileRef = C397EE4E1BFE10C7007FD01D /* pr2.png */; };
+		C397EE521BFE10C7007FD01D /* pr3.png in Resources */ = {isa = PBXBuildFile; fileRef = C397EE4F1BFE10C7007FD01D /* pr3.png */; };
 		C3C5A8811BDF64B000D2BD1C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C5A8801BDF64B000D2BD1C /* main.m */; };
 		C3C5A8841BDF64B000D2BD1C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C5A8831BDF64B000D2BD1C /* AppDelegate.m */; };
 		C3C5A88A1BDF64B000D2BD1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3C5A8881BDF64B000D2BD1C /* Main.storyboard */; };
@@ -103,6 +107,11 @@
 		C359F8711BF2408500AD6E3A /* StartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartViewController.m; sourceTree = "<group>"; };
 		C37CFC301BF35A480054F8D3 /* WaterManagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaterManagerViewController.h; sourceTree = "<group>"; };
 		C37CFC311BF35A480054F8D3 /* WaterManagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaterManagerViewController.m; sourceTree = "<group>"; };
+		C397EE4A1BFE0C4A007FD01D /* PreviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreviewViewController.h; sourceTree = "<group>"; };
+		C397EE4B1BFE0C4A007FD01D /* PreviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreviewViewController.m; sourceTree = "<group>"; };
+		C397EE4D1BFE10C7007FD01D /* pr1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pr1.png; sourceTree = "<group>"; };
+		C397EE4E1BFE10C7007FD01D /* pr2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pr2.png; sourceTree = "<group>"; };
+		C397EE4F1BFE10C7007FD01D /* pr3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pr3.png; sourceTree = "<group>"; };
 		C3C5A87C1BDF64B000D2BD1C /* Fitness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fitness.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3C5A8801BDF64B000D2BD1C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C3C5A8821BDF64B000D2BD1C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -235,6 +244,11 @@
 		C397EE491BFE075A007FD01D /* Preview */ = {
 			isa = PBXGroup;
 			children = (
+				C397EE4A1BFE0C4A007FD01D /* PreviewViewController.h */,
+				C397EE4B1BFE0C4A007FD01D /* PreviewViewController.m */,
+				C397EE4D1BFE10C7007FD01D /* pr1.png */,
+				C397EE4E1BFE10C7007FD01D /* pr2.png */,
+				C397EE4F1BFE10C7007FD01D /* pr3.png */,
 			);
 			name = Preview;
 			sourceTree = "<group>";
@@ -515,16 +529,19 @@
 				C3FE28B51BECC41B00B6D7EC /* dinnerHighlighted@2x.png in Resources */,
 				C3D64A4D1BF3390100A26A65 /* afternoon@2x.png in Resources */,
 				C3D164881BE7AD380064ABA2 /* buttonGear@2x.png in Resources */,
+				C397EE501BFE10C7007FD01D /* pr1.png in Resources */,
 				C3C5A88C1BDF64B000D2BD1C /* Assets.xcassets in Resources */,
 				C359F86F1BF23FA900AD6E3A /* icon_water@2x.png in Resources */,
 				C30EA2581BF9E8DF00DD4EAA /* image_1.jpg in Resources */,
 				C3FE28B71BECC41B00B6D7EC /* secondBreakfastHighlighted@2x.png in Resources */,
 				C3FE28D21BECE26B00B6D7EC /* 4.jpg in Resources */,
+				C397EE511BFE10C7007FD01D /* pr2.png in Resources */,
 				C3FE28D11BECE26B00B6D7EC /* 3.jpg in Resources */,
 				C3FE28C21BECDAA200B6D7EC /* Recipes.json in Resources */,
 				C31CB7041BF49D2100E073A9 /* addGlass@2x.png in Resources */,
 				C3FE28B41BECC41B00B6D7EC /* breakfastHighlighted@2x.png in Resources */,
 				C3FE28A51BECBC1800B6D7EC /* lanch@2x.png in Resources */,
+				C397EE521BFE10C7007FD01D /* pr3.png in Resources */,
 				C30EA2541BF9E33E00DD4EAA /* Tips.json in Resources */,
 				C31CB7051BF49D2100E073A9 /* emptyGlass@2x.png in Resources */,
 				C3FE28A61BECBC1800B6D7EC /* secondBreakfast@2x.png in Resources */,
@@ -573,6 +590,7 @@
 				C3C5A8BD1BDF785600D2BD1C /* PersonalOfficeViewController.m in Sources */,
 				C3CF8ACD1BF0DB0200E3547F /* DetailRecipeViewController.m in Sources */,
 				C3FE289F1BECB90300B6D7EC /* MenuTableViewCell.m in Sources */,
+				C397EE4C1BFE0C4A007FD01D /* PreviewViewController.m in Sources */,
 				C3C5A8811BDF64B000D2BD1C /* main.m in Sources */,
 				C359F8721BF2408500AD6E3A /* StartViewController.m in Sources */,
 				204EF23F1BE1129000F77F88 /* MainMenuTableViewController.m in Sources */,
